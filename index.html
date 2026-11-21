@@ -1,0 +1,1869 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>亚洲宅男福利社_原创影像社区 | 宅文化视频品牌官网</title>
+<meta name="description" content="亚洲宅男福利社官方网站，深耕宅文化与二次元兴趣圈层的原创视频社区，汇集创作者精品内容、专题企划与企业动态，持续运营值得信赖的内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1830'/%3E%3Cpolygon points='26,20 48,32 26,44' fill='%23ff5c8a'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%2358e3c9'/%3E%3C/svg%3E">
+<style>
+:root{
+  --zhai-bg:#12101f;
+  --zhai-panel:#1b1830;
+  --zhai-panel-2:#221e3c;
+  --zhai-line:rgba(255,255,255,.08);
+  --zhai-text:#eceaf6;
+  --zhai-muted:#a09bbd;
+  --zhai-pink:#ff5c8a;
+  --zhai-mint:#58e3c9;
+  --zhai-violet:#8d7bff;
+  --zhai-amber:#ffc46b;
+  --zhai-radius:16px;
+  --zhai-stick:108px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--zhai-stick)}
+body{
+  background:var(--zhai-bg);
+  color:var(--zhai-text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.zhai-wrap{width:min(1200px,92%);margin:0 auto}
+
+/* ============ 吸顶区 ============ */
+.zhai-sticky-top{position:sticky;top:0;z-index:120}
+.zhai-notice{
+  background:linear-gradient(90deg,#2a1f4a,#3a1f42 45%,#1f2a4a);
+  border-bottom:1px solid var(--zhai-line);
+  font-size:13px;
+  color:#d9d4f0;
+}
+.zhai-notice-inner{
+  display:flex;align-items:center;gap:12px;
+  padding:7px 0;
+  overflow:hidden;
+}
+.zhai-notice-tag{
+  flex:none;
+  background:var(--zhai-pink);
+  color:#1a0f18;
+  font-weight:700;
+  font-size:11px;
+  letter-spacing:1px;
+  padding:2px 9px;
+  border-radius:999px;
+}
+.zhai-notice-list{display:flex;gap:34px;white-space:nowrap;animation:zhaiMarquee 34s linear infinite}
+.zhai-notice-list li::before{content:"◆";color:var(--zhai-mint);margin-right:8px;font-size:10px}
+@keyframes zhaiMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.zhai-header{
+  background:rgba(18,16,31,.9);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--zhai-line);
+}
+.zhai-header-inner{
+  display:flex;align-items:center;gap:26px;
+  padding:12px 0;
+}
+.zhai-brand{display:flex;align-items:center;gap:10px;flex:none}
+.zhai-brand-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(135deg,var(--zhai-pink),var(--zhai-violet));
+  display:grid;place-items:center;font-weight:800;font-size:15px;color:#fff;
+  box-shadow:0 6px 18px rgba(255,92,138,.28);
+}
+.zhai-brand-name{font-size:17px;font-weight:700;letter-spacing:.5px}
+.zhai-brand-sub{display:block;font-size:10px;color:var(--zhai-muted);letter-spacing:2px;font-weight:400}
+.zhai-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.zhai-nav a{
+  padding:6px 12px;border-radius:9px;font-size:14px;color:#c7c2df;transition:.2s;
+}
+.zhai-nav a:hover{background:rgba(255,255,255,.07);color:#fff}
+.zhai-search{display:flex;align-items:center;gap:8px;flex:none}
+.zhai-search-box{
+  display:flex;align-items:center;gap:6px;
+  background:var(--zhai-panel-2);
+  border:1px solid var(--zhai-line);
+  border-radius:999px;
+  padding:5px 6px 5px 12px;
+}
+.zhai-search-box input{
+  background:none;border:none;outline:none;color:var(--zhai-text);
+  font-size:13px;width:130px;
+}
+.zhai-search-box input::placeholder{color:#7d779e}
+.zhai-search-btn{
+  background:var(--zhai-pink);color:#1a0f18;font-weight:700;font-size:12px;
+  padding:4px 12px;border-radius:999px;
+}
+.zhai-burger{display:none;font-size:22px;padding:4px 8px}
+.zhai-search-feedback{
+  position:absolute;left:0;right:0;top:100%;
+  background:var(--zhai-panel-2);border:1px solid var(--zhai-line);
+  border-radius:12px;padding:8px 0;margin-top:6px;
+  font-size:13px;color:var(--zhai-muted);display:none;
+  box-shadow:0 18px 40px rgba(0,0,0,.45);
+}
+.zhai-search-wrap{position:relative}
+.zhai-search-feedback.is-on{display:block}
+.zhai-search-feedback li{padding:7px 14px}
+.zhai-search-feedback li:hover{background:rgba(255,255,255,.06);color:#fff}
+
+/* ============ 首屏 ============ */
+.zhai-hero{position:relative;padding:64px 0 70px;overflow:hidden}
+.zhai-hero::before{
+  content:"";position:absolute;inset:-40% -10% auto -10%;height:120%;
+  background:radial-gradient(60% 50% at 20% 10%,rgba(141,123,255,.24),transparent 65%),
+             radial-gradient(50% 45% at 85% 25%,rgba(255,92,138,.2),transparent 60%),
+             radial-gradient(40% 40% at 55% 80%,rgba(88,227,201,.12),transparent 70%);
+  pointer-events:none;
+}
+.zhai-hero-grid{
+  position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;
+}
+.zhai-hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:2px;color:var(--zhai-mint);
+  border:1px solid rgba(88,227,201,.35);border-radius:999px;
+  padding:4px 12px;margin-bottom:20px;
+}
+.zhai-hero h1{
+  font-size:clamp(34px,4.4vw,56px);
+  line-height:1.18;letter-spacing:1px;font-weight:800;
+  background:linear-gradient(100deg,#fff 20%,#ffb6cb 55%,#9df3e2 90%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:18px;
+}
+.zhai-hero-lead{font-size:16px;color:#cfcae8;max-width:560px;margin-bottom:22px}
+.zhai-hero-intro{font-size:14px;color:var(--zhai-muted);max-width:600px;margin-bottom:26px;text-align:justify}
+.zhai-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+.zhai-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;border-radius:999px;font-size:14px;font-weight:600;
+  transition:.22s;border:1px solid transparent;
+}
+.zhai-btn-primary{background:linear-gradient(100deg,var(--zhai-pink),var(--zhai-violet));color:#fff}
+.zhai-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(255,92,138,.3)}
+.zhai-btn-ghost{border-color:rgba(255,255,255,.18);color:#dcd7f2}
+.zhai-btn-ghost:hover{border-color:var(--zhai-mint);color:var(--zhai-mint)}
+.zhai-hero-stats{display:flex;gap:34px;flex-wrap:wrap}
+.zhai-hero-stats li strong{display:block;font-size:24px;color:#fff;font-weight:800}
+.zhai-hero-stats li span{font-size:12px;color:var(--zhai-muted);letter-spacing:1px}
+.zhai-hero-visual{position:relative}
+.zhai-hero-frame{
+  border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 30px 70px rgba(0,0,0,.55);
+  transform:rotate(-1.2deg);
+}
+.zhai-hero-frame svg{display:block;width:100%;height:auto}
+.zhai-hero-chip{
+  position:absolute;background:rgba(27,24,48,.92);border:1px solid var(--zhai-line);
+  border-radius:12px;padding:9px 14px;font-size:12px;color:#d6d1ee;
+  backdrop-filter:blur(8px);
+}
+.zhai-hero-chip i{color:var(--zhai-mint);font-style:normal;font-weight:700}
+.zhai-hero-chip-a{left:-14px;bottom:56px;animation:zhaiFloat 5s ease-in-out infinite}
+.zhai-hero-chip-b{right:-8px;top:28px;animation:zhaiFloat 6.4s ease-in-out infinite reverse}
+@keyframes zhaiFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+
+/* ============ 通用区块 ============ */
+.zhai-section{padding:62px 0}
+.zhai-section-head{margin-bottom:32px;max-width:760px}
+.zhai-section-kicker{
+  font-size:12px;letter-spacing:3px;color:var(--zhai-pink);font-weight:700;margin-bottom:8px;
+}
+.zhai-section h2{
+  font-size:clamp(23px,2.8vw,32px);font-weight:800;letter-spacing:.5px;margin-bottom:12px;
+}
+.zhai-section h2 em{font-style:normal;color:var(--zhai-mint)}
+.zhai-section-desc{font-size:14px;color:var(--zhai-muted)}
+
+/* 深度解析 */
+.zhai-about{background:linear-gradient(180deg,rgba(34,30,60,.55),transparent)}
+.zhai-about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
+.zhai-about-text p{font-size:14px;color:#c4bfdd;margin-bottom:14px;text-align:justify}
+.zhai-about-text h3{font-size:17px;margin:22px 0 8px;color:#fff}
+.zhai-about-aside{display:grid;gap:14px}
+.zhai-aside-card{
+  background:var(--zhai-panel);border:1px solid var(--zhai-line);
+  border-radius:var(--zhai-radius);padding:18px 20px;
+}
+.zhai-aside-card h4{font-size:14px;color:var(--zhai-amber);margin-bottom:8px}
+.zhai-aside-card p{font-size:13px;color:var(--zhai-muted);text-align:justify}
+
+/* 卡片基类 */
+.zhai-card{
+  background:var(--zhai-panel);border:1px solid var(--zhai-line);
+  border-radius:var(--zhai-radius);overflow:hidden;transition:.25s;
+}
+.zhai-card:hover{transform:translateY(-5px);border-color:rgba(255,92,138,.4);box-shadow:0 16px 36px rgba(0,0,0,.5)}
+.zhai-cover{position:relative;aspect-ratio:16/9;overflow:hidden}
+.zhai-cover svg{width:100%;height:100%;display:block;transition:transform .5s}
+.zhai-card:hover .zhai-cover svg{transform:scale(1.05)}
+.zhai-cover-tag{
+  position:absolute;top:10px;left:10px;font-size:11px;font-weight:700;
+  background:rgba(18,16,31,.82);border:1px solid rgba(255,255,255,.16);
+  color:var(--zhai-mint);padding:3px 9px;border-radius:999px;backdrop-filter:blur(4px);
+}
+.zhai-cover-dur{
+  position:absolute;right:10px;bottom:10px;font-size:11px;
+  background:rgba(18,16,31,.82);color:#d6d1ee;padding:2px 8px;border-radius:6px;
+}
+.zhai-card-body{padding:15px 16px 16px}
+.zhai-card-body h3{font-size:15px;font-weight:700;line-height:1.5;margin-bottom:7px}
+.zhai-card-body p{font-size:12.5px;color:var(--zhai-muted);line-height:1.65;margin-bottom:11px}
+.zhai-card-meta{
+  display:flex;align-items:center;gap:8px;font-size:12px;color:#8f89b3;flex-wrap:wrap;
+}
+.zhai-avatar{
+  width:24px;height:24px;border-radius:50%;display:grid;place-items:center;
+  font-size:11px;font-weight:700;color:#16142a;flex:none;
+}
+.zhai-card-actions{
+  display:flex;gap:8px;margin-top:12px;padding-top:11px;border-top:1px dashed var(--zhai-line);
+}
+.zhai-act{
+  font-size:12px;color:#a9a3c9;padding:4px 10px;border-radius:8px;
+  border:1px solid var(--zhai-line);transition:.2s;display:inline-flex;gap:5px;align-items:center;
+}
+.zhai-act:hover{color:#fff;border-color:rgba(255,255,255,.3)}
+.zhai-act.is-liked{color:var(--zhai-pink);border-color:rgba(255,92,138,.5)}
+.zhai-act.is-saved{color:var(--zhai-mint);border-color:rgba(88,227,201,.5)}
+
+/* 焦点区 */
+.zhai-focus-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:22px}
+.zhai-focus-side{display:grid;gap:18px}
+.zhai-focus-big .zhai-cover{aspect-ratio:16/8.4}
+.zhai-focus-big .zhai-card-body h3{font-size:21px}
+.zhai-focus-big .zhai-card-body p{font-size:13.5px}
+.zhai-mini{display:grid;grid-template-columns:132px 1fr;gap:0}
+.zhai-mini .zhai-cover{aspect-ratio:16/11;height:100%}
+.zhai-mini .zhai-card-body{padding:12px 14px}
+.zhai-mini .zhai-card-body h3{font-size:13.5px;margin-bottom:5px}
+.zhai-mini .zhai-card-body p{font-size:12px;margin-bottom:8px}
+
+/* 视频流 */
+.zhai-flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.zhai-tags{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:24px}
+.zhai-tag-btn{
+  font-size:13px;color:#b6b0d3;padding:6px 15px;border-radius:999px;
+  border:1px solid var(--zhai-line);background:var(--zhai-panel);transition:.2s;
+}
+.zhai-tag-btn:hover{color:#fff;border-color:rgba(255,255,255,.3)}
+.zhai-tag-btn.is-active{background:linear-gradient(100deg,var(--zhai-pink),var(--zhai-violet));color:#fff;border-color:transparent}
+
+/* 专题 */
+.zhai-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.zhai-topic{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--zhai-line);background:var(--zhai-panel);transition:.25s}
+.zhai-topic:hover{transform:translateY(-5px);border-color:rgba(141,123,255,.5)}
+.zhai-topic-visual{aspect-ratio:16/9;position:relative}
+.zhai-topic-visual svg{width:100%;height:100%;display:block}
+.zhai-topic-status{
+  position:absolute;top:10px;right:10px;font-size:11px;font-weight:700;
+  padding:3px 9px;border-radius:999px;background:rgba(88,227,201,.16);color:var(--zhai-mint);
+  border:1px solid rgba(88,227,201,.4);
+}
+.zhai-topic-info{padding:15px 17px 18px}
+.zhai-topic-info h3{font-size:15.5px;margin-bottom:7px}
+.zhai-topic-info p{font-size:12.5px;color:var(--zhai-muted);line-height:1.65}
+
+/* 创作者 */
+.zhai-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.zhai-creator{
+  background:var(--zhai-panel);border:1px solid var(--zhai-line);
+  border-radius:var(--zhai-radius);padding:22px 18px;text-align:center;transition:.25s;
+}
+.zhai-creator:hover{transform:translateY(-5px);border-color:rgba(88,227,201,.4)}
+.zhai-creator-avatar{
+  width:62px;height:62px;border-radius:20px;margin:0 auto 13px;
+  display:grid;place-items:center;font-size:22px;font-weight:800;color:#16142a;
+}
+.zhai-creator h3{font-size:15px;margin-bottom:4px}
+.zhai-creator .zhai-creator-field{font-size:11.5px;color:var(--zhai-mint);letter-spacing:.5px;margin-bottom:9px}
+.zhai-creator p{font-size:12px;color:var(--zhai-muted);line-height:1.6;margin-bottom:12px;min-height:56px}
+.zhai-creator-data{display:flex;justify-content:center;gap:16px;font-size:11.5px;color:#8f89b3;margin-bottom:13px}
+.zhai-creator-data b{display:block;color:#e6e2f7;font-size:14px}
+.zhai-more-link{
+  display:block;width:100%;text-align:center;font-size:12px;
+  padding:6px;border-radius:8px;border:1px solid var(--zhai-line);color:#b6b0d3;transition:.2s;
+}
+.zhai-more-link:hover{color:#fff;border-color:var(--zhai-pink)}
+
+/* 故事 */
+.zhai-story-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.zhai-story{
+  background:linear-gradient(160deg,var(--zhai-panel),rgba(34,30,60,.5));
+  border:1px solid var(--zhai-line);border-radius:var(--zhai-radius);padding:26px 26px 24px;
+  position:relative;transition:.25s;
+}
+.zhai-story:hover{border-color:rgba(255,196,107,.35)}
+.zhai-story::before{
+  content:"“";position:absolute;top:6px;right:20px;font-size:64px;color:rgba(255,92,138,.16);
+  font-family:Georgia,serif;line-height:1;
+}
+.zhai-story h3{font-size:16px;margin-bottom:10px;color:#fff}
+.zhai-story p{font-size:13.5px;color:#bcb6d6;line-height:1.8;text-align:justify}
+.zhai-story-by{display:flex;align-items:center;gap:9px;margin-top:16px;font-size:12px;color:#8f89b3}
+
+/* 评论 */
+.zhai-comment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.zhai-comment{
+  background:var(--zhai-panel);border:1px solid var(--zhai-line);border-radius:14px;padding:16px 17px;
+}
+.zhai-comment-head{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+.zhai-comment-head .zhai-avatar{width:28px;height:28px;font-size:12px}
+.zhai-comment-head strong{font-size:13px;font-weight:600}
+.zhai-comment-head span{font-size:11px;color:#7d779e;margin-left:auto}
+.zhai-comment p{font-size:13px;color:#bdb7d8;line-height:1.7}
+.zhai-comment-foot{margin-top:10px;font-size:11.5px;color:#7d779e;display:flex;gap:14px}
+
+/* 榜单 */
+.zhai-rank-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.zhai-rank{
+  background:var(--zhai-panel);border:1px solid var(--zhai-line);border-radius:var(--zhai-radius);padding:20px 20px 14px;
+}
+.zhai-rank h3{font-size:15px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.zhai-rank h3 span{font-size:11px;color:var(--zhai-muted);font-weight:400}
+.zhai-rank li{
+  display:flex;align-items:center;gap:11px;padding:9px 0;border-bottom:1px dashed var(--zhai-line);font-size:13px;
+}
+.zhai-rank li:last-child{border-bottom:none}
+.zhai-rank-num{
+  width:20px;height:20px;border-radius:6px;display:grid;place-items:center;
+  font-size:11px;font-weight:700;background:rgba(255,255,255,.08);color:#cfcae8;flex:none;
+}
+.zhai-rank li:nth-child(1) .zhai-rank-num{background:var(--zhai-pink);color:#1a0f18}
+.zhai-rank li:nth-child(2) .zhai-rank-num{background:var(--zhai-amber);color:#1a0f18}
+.zhai-rank li:nth-child(3) .zhai-rank-num{background:var(--zhai-mint);color:#0f1a18}
+.zhai-rank li em{font-style:normal;margin-left:auto;color:#7d779e;font-size:11.5px;flex:none}
+
+/* 灵感 */
+.zhai-idea{background:linear-gradient(180deg,rgba(34,30,60,.5),transparent)}
+.zhai-idea-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.zhai-idea-card{
+  background:var(--zhai-panel-2);border:1px solid var(--zhai-line);border-radius:14px;padding:20px;
+}
+.zhai-idea-card h3{font-size:14.5px;margin-bottom:9px;color:var(--zhai-mint)}
+.zhai-idea-card p{font-size:12.5px;color:var(--zhai-muted);line-height:1.7}
+.zhai-idea-card code{
+  display:block;margin-top:10px;font-size:12px;background:rgba(0,0,0,.3);
+  border-radius:8px;padding:9px 11px;color:#d9d4f0;font-family:inherit;line-height:1.6;
+}
+
+/* 动态 */
+.zhai-news-list{display:grid;gap:14px}
+.zhai-news{
+  display:grid;grid-template-columns:92px 1fr auto;gap:18px;align-items:center;
+  background:var(--zhai-panel);border:1px solid var(--zhai-line);
+  border-radius:14px;padding:16px 20px;transition:.22s;
+}
+.zhai-news:hover{border-color:rgba(141,123,255,.45);transform:translateX(4px)}
+.zhai-news-date{font-size:12px;color:var(--zhai-mint);letter-spacing:.5px}
+.zhai-news h3{font-size:14.5px;margin-bottom:4px}
+.zhai-news p{font-size:12.5px;color:var(--zhai-muted)}
+.zhai-news-tag{
+  font-size:11px;color:var(--zhai-amber);border:1px solid rgba(255,196,107,.35);
+  padding:3px 10px;border-radius:999px;white-space:nowrap;
+}
+
+/* 合作 */
+.zhai-partner-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.zhai-partner{
+  background:var(--zhai-panel);border:1px solid var(--zhai-line);border-radius:12px;
+  height:74px;display:grid;place-items:center;
+  font-size:13px;color:#b6b0d3;letter-spacing:1px;transition:.22s;text-align:center;padding:6px;
+}
+.zhai-partner:hover{border-color:rgba(88,227,201,.45);color:#fff}
+
+/* FAQ */
+.zhai-faq{display:grid;gap:12px}
+.zhai-faq details{
+  background:var(--zhai-panel);border:1px solid var(--zhai-line);border-radius:12px;
+  padding:0 18px;transition:.2s;
+}
+.zhai-faq details[open]{border-color:rgba(255,92,138,.4);background:var(--zhai-panel-2)}
+.zhai-faq summary{
+  list-style:none;cursor:pointer;padding:15px 0;font-size:14px;font-weight:600;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.zhai-faq summary::-webkit-details-marker{display:none}
+.zhai-faq summary::after{
+  content:"+";font-size:19px;color:var(--zhai-pink);font-weight:400;transition:.25s;flex:none;
+}
+.zhai-faq details[open] summary::after{transform:rotate(45deg)}
+.zhai-faq details p{font-size:13px;color:var(--zhai-muted);padding-bottom:16px;line-height:1.75;text-align:justify}
+
+/* 联系 */
+.zhai-contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:start}
+.zhai-contact-box{
+  background:linear-gradient(150deg,rgba(255,92,138,.14),rgba(141,123,255,.14));
+  border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:32px;
+}
+.zhai-contact-box h3{font-size:19px;margin-bottom:12px}
+.zhai-contact-box p{font-size:13.5px;color:#c9c4e3;margin-bottom:20px;text-align:justify}
+.zhai-contact-actions{display:flex;flex-wrap:wrap;gap:12px}
+.zhai-contact-list{display:grid;gap:14px}
+.zhai-contact-item{
+  display:flex;gap:14px;background:var(--zhai-panel);border:1px solid var(--zhai-line);
+  border-radius:13px;padding:15px 18px;font-size:13px;
+}
+.zhai-contact-item b{display:block;font-size:12px;color:var(--zhai-mint);margin-bottom:3px;font-weight:600}
+.zhai-contact-item span{color:#a9a3c9;font-size:12.5px}
+
+/* 页脚 */
+.zhai-footer{
+  background:#0d0b18;border-top:1px solid var(--zhai-line);padding:48px 0 26px;margin-top:20px;
+}
+.zhai-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;margin-bottom:34px}
+.zhai-footer h4{font-size:13px;color:#fff;margin-bottom:13px;letter-spacing:.5px}
+.zhai-footer p{font-size:12.5px;color:#8f89b3;line-height:1.8}
+.zhai-footer li{font-size:12.5px;color:#8f89b3;margin-bottom:8px}
+.zhai-footer li:hover{color:var(--zhai-mint)}
+.zhai-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.zhai-footer-bottom{
+  border-top:1px solid var(--zhai-line);padding-top:20px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:12px;color:#6d6890;
+}
+
+/* 悬浮与弹窗 */
+.zhai-toast{
+  position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);
+  background:rgba(27,24,48,.97);border:1px solid rgba(88,227,201,.4);
+  color:#e8e4f8;font-size:13px;padding:10px 20px;border-radius:999px;
+  opacity:0;pointer-events:none;transition:.3s;z-index:300;box-shadow:0 14px 34px rgba(0,0,0,.55);
+}
+.zhai-toast.is-on{opacity:1;transform:translate(-50%,0)}
+.zhai-top-btn{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--zhai-pink),var(--zhai-violet));color:#fff;
+  display:grid;place-items:center;font-size:17px;z-index:190;
+  opacity:0;pointer-events:none;transition:.3s;box-shadow:0 10px 26px rgba(255,92,138,.35);
+}
+.zhai-top-btn.is-on{opacity:1;pointer-events:auto}
+.zhai-modal{
+  position:fixed;inset:0;background:rgba(8,6,16,.78);backdrop-filter:blur(6px);
+  display:none;place-items:center;padding:20px;z-index:280;
+}
+.zhai-modal.is-on{display:grid}
+.zhai-modal-box{
+  width:min(460px,100%);background:var(--zhai-panel);border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;padding:26px;position:relative;max-height:86vh;overflow:auto;
+}
+.zhai-modal-box h3{font-size:17px;margin-bottom:8px}
+.zhai-modal-box p{font-size:13px;color:var(--zhai-muted);margin-bottom:16px;line-height:1.75}
+.zhai-modal-close{position:absolute;right:14px;top:12px;font-size:19px;color:#8f89b3;padding:4px 8px}
+.zhai-modal-close:hover{color:#fff}
+.zhai-modal textarea,.zhai-modal input{
+  width:100%;background:var(--zhai-panel-2);border:1px solid var(--zhai-line);
+  border-radius:10px;padding:10px 12px;color:var(--zhai-text);font-size:13px;
+  outline:none;margin-bottom:12px;font-family:inherit;resize:vertical;
+}
+.zhai-modal textarea:focus,.zhai-modal input:focus{border-color:var(--zhai-pink)}
+.zhai-modal-foot{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+.zhai-share-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.zhai-share-item{
+  display:grid;place-items:center;gap:6px;padding:14px 6px;border-radius:12px;
+  background:var(--zhai-panel-2);border:1px solid var(--zhai-line);font-size:12px;transition:.2s;
+}
+.zhai-share-item:hover{border-color:var(--zhai-mint);color:var(--zhai-mint)}
+.zhai-share-item b{font-size:17px}
+
+@media (max-width:1024px){
+  .zhai-hero-grid{grid-template-columns:1fr;gap:34px}
+  .zhai-flow-grid,.zhai-topic-grid,.zhai-comment-grid,.zhai-idea-grid,.zhai-rank-wrap{grid-template-columns:repeat(2,1fr)}
+  .zhai-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .zhai-about-grid,.zhai-contact-grid,.zhai-focus-grid{grid-template-columns:1fr}
+  .zhai-footer-grid{grid-template-columns:1fr 1fr}
+  .zhai-partner-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:720px){
+  :root{--zhai-stick:104px}
+  .zhai-nav{
+    display:none;position:absolute;left:4%;right:4%;top:100%;
+    background:var(--zhai-panel);border:1px solid var(--zhai-line);border-radius:14px;
+    padding:10px;flex-direction:column;gap:2px;box-shadow:0 20px 40px rgba(0,0,0,.55);
+  }
+  .zhai-nav.is-open{display:flex}
+  .zhai-header-inner{position:relative;gap:14px;padding:10px 0;flex-wrap:wrap}
+  .zhai-search{width:100%;order:3}
+  .zhai-search-box{flex:1}
+  .zhai-search-box input{width:100%;flex:1}
+  .zhai-burger{display:block;margin-left:auto}
+  .zhai-flow-grid,.zhai-topic-grid,.zhai-comment-grid,.zhai-idea-grid,
+  .zhai-rank-wrap,.zhai-creator-grid,.zhai-story-grid{grid-template-columns:1fr}
+  .zhai-partner-grid{grid-template-columns:repeat(2,1fr)}
+  .zhai-news{grid-template-columns:1fr;gap:6px}
+  .zhai-news-tag{justify-self:start}
+  .zhai-footer-grid{grid-template-columns:1fr}
+  .zhai-hero-stats{gap:22px}
+  .zhai-section{padding:46px 0}
+  .zhai-mini{grid-template-columns:100px 1fr}
+  .zhai-hero-chip-a{left:0}
+  .zhai-hero-chip-b{right:0}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="zhai-sticky-top">
+  <div class="zhai-notice">
+    <div class="zhai-wrap zhai-notice-inner">
+      <span class="zhai-notice-tag">官方发布</span>
+      <ul class="zhai-notice-list" id="zhaiNoticeList">
+        <li>「深夜番剧拆解」第三季 11 月 17 日上线，首批 8 期精品内容已入库</li>
+        <li>宅文化创作挑战赛 #我的收藏柜故事 报名进行中，投稿截止 12 月 5 日</li>
+        <li>创作者扶持计划 2.0 开放申请，新增 4K 高清素材库与剪辑模板下载</li>
+        <li>社区公约更新：新增周边交易信息发布规范，11 月 20 日起执行</li>
+        <li>「深夜番剧拆解」第三季 11 月 17 日上线，首批 8 期精品内容已入库</li>
+        <li>宅文化创作挑战赛 #我的收藏柜故事 报名进行中，投稿截止 12 月 5 日</li>
+        <li>创作者扶持计划 2.0 开放申请，新增 4K 高清素材库与剪辑模板下载</li>
+        <li>社区公约更新：新增周边交易信息发布规范，11 月 20 日起执行</li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="zhai-header">
+    <div class="zhai-wrap zhai-header-inner">
+      <a class="zhai-brand" href="#zhaiHome">
+        <span class="zhai-brand-mark">宅</span>
+        <span>
+          <span class="zhai-brand-name">亚洲宅男福利社</span>
+          <span class="zhai-brand-sub">OTAKU VIDEO CLUB</span>
+        </span>
+      </a>
+      <nav class="zhai-nav" id="zhaiNav">
+        <a href="#zhaiHome">首页</a>
+        <a href="#zhaiFocus">焦点视频</a>
+        <a href="#zhaiTopic">专题企划</a>
+        <a href="#zhaiCreator">创作者</a>
+        <a href="#zhaiStory">故事随笔</a>
+        <a href="#zhaiNews">企业动态</a>
+        <a href="#zhaiFaq">帮助中心</a>
+        <a href="#zhaiContact">联系我们</a>
+      </nav>
+      <div class="zhai-search zhai-search-wrap">
+        <div class="zhai-search-box">
+          <input type="text" id="zhaiSearchInput" placeholder="搜索番剧、手办、创作者…" aria-label="站内搜索">
+          <button class="zhai-search-btn" id="zhaiSearchBtn" type="button">搜索</button>
+        </div>
+        <ul class="zhai-search-feedback" id="zhaiSearchFeedback"></ul>
+      </div>
+      <button class="zhai-burger" id="zhaiBurger" type="button" aria-label="展开导航">☰</button>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="zhai-hero" id="zhaiHome">
+    <div class="zhai-wrap zhai-hero-grid">
+      <div>
+        <span class="zhai-hero-eyebrow">官方网站 · 原创影像社区</span>
+        <h1>亚洲宅男福利社</h1>
+        <p class="zhai-hero-lead">为宅文化爱好者打造的品牌官网与内容社区，专注番剧解析、手办收藏、游戏日常与创作者生态。</p>
+        <p class="zhai-hero-intro">亚洲宅男福利社是深耕宅文化垂直领域的原创视频品牌，由一支长期混迹于漫展、同人展与深夜动画番组的编辑团队发起。我们以「真实记录兴趣，专业呈现热爱」为宗旨，通过企划、拍摄、剪辑与社区运营，把散落在各处的宅文化经验整理成可被反复观看的精品内容。官网既是作品橱窗，也是创作者与企业、品牌、同好之间的连接通道，我们相信兴趣值得被认真对待，也值得被高清记录。</p>
+        <div class="zhai-hero-actions">
+          <a class="zhai-btn zhai-btn-primary" href="#zhaiFocus">进入焦点视频 ▸</a>
+          <a class="zhai-btn zhai-btn-ghost" href="#zhaiCreator">认识创作者</a>
+          <button class="zhai-btn zhai-btn-ghost" id="zhaiOpenSubmit" type="button">投稿入口</button>
+        </div>
+        <ul class="zhai-hero-stats">
+          <li><strong data-zhai-count="12800">0</strong><span>精品视频内容</span></li>
+          <li><strong data-zhai-count="460">0</strong><span>签约创作者</span></li>
+          <li><strong data-zhai-count="86">0</strong><span>万社区同好</span></li>
+        </ul>
+      </div>
+      <div class="zhai-hero-visual">
+        <div class="zhai-hero-frame">
+          <svg viewBox="0 0 640 400" role="img" aria-label="亚洲宅男福利社品牌主视觉：夜色中的番剧放映厅与手办展柜">
+            <defs>
+              <linearGradient id="zhaiHeroSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#221a3e"/>
+                <stop offset="1" stop-color="#0e0c1c"/>
+              </linearGradient>
+              <linearGradient id="zhaiHeroScreen" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff5c8a"/>
+                <stop offset="1" stop-color="#8d7bff"/>
+              </linearGradient>
+              <linearGradient id="zhaiHeroShelf" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#58e3c9" stop-opacity=".8"/>
+                <stop offset="1" stop-color="#58e3c9" stop-opacity=".05"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="400" fill="url(#zhaiHeroSky)"/>
+            <circle cx="520" cy="70" r="46" fill="#ffc46b" opacity=".22"/>
+            <circle cx="520" cy="70" r="26" fill="#ffc46b" opacity=".45"/>
+            <g opacity=".5" fill="#8d7bff">
+              <circle cx="80" cy="50" r="2"/><circle cx="150" cy="30" r="1.6"/>
+              <circle cx="230" cy="64" r="2.2"/><circle cx="330" cy="36" r="1.5"/>
+              <circle cx="410" cy="70" r="2"/><circle cx="600" cy="120" r="1.8"/>
+              <circle cx="60" cy="130" r="1.4"/><circle cx="300" cy="98" r="1.7"/>
+            </g>
+            <rect x="60" y="120" width="520" height="212" rx="16" fill="#16132b" stroke="#3a3360" stroke-width="2"/>
+            <rect x="92" y="150" width="300" height="152" rx="8" fill="url(#zhaiHeroScreen)" opacity=".9"/>
+            <polygon points="222,196 282,226 222,256" fill="#17142c" opacity=".85"/>
+            <rect x="92" y="150" width="300" height="152" rx="8" fill="none" stroke="#ffffff" stroke-opacity=".3"/>
+            <text x="110" y="176" font-size="13" fill="#ffffff" opacity=".8">LATE NIGHT ANIME</text>
+            <g>
+              <rect x="416" y="150" width="138" height="46" rx="8" fill="#1e1a36" stroke="#3a3360"/>
+              <rect x="426" y="160" width="34" height="26" rx="4" fill="url(#zhaiHeroShelf)"/>
+              <rect x="470" y="160" width="34" height="26" rx="4" fill="#ff5c8a" opacity=".75"/>
+              <rect x="514" y="160" width="30" height="26" rx="4" fill="#8d7bff" opacity=".75"/>
+              <rect x="416" y="206" width="138" height="46" rx="8" fill="#1e1a36" stroke="#3a3360"/>
+              <circle cx="443" cy="229" r="13" fill="#58e3c9" opacity=".8"/>
+              <rect x="466" y="218" width="70" height="8" rx="4" fill="#5a5188"/>
+              <rect x="466" y="233" width="46" height="8" rx="4" fill="#3d3866"/>
+              <rect x="416" y="262" width="138" height="40" rx="8" fill="#1e1a36" stroke="#3a3360"/>
+              <rect x="428" y="274" width="60" height="7" rx="3.5" fill="#ffc46b" opacity=".8"/>
+              <rect x="428" y="287" width="92" height="7" rx="3.5" fill="#3d3866"/>
+            </g>
+            <rect x="60" y="338" width="520" height="14" rx="7" fill="#1b1830" stroke="#3a3360"/>
+          </svg>
+        </div>
+        <div class="zhai-hero-chip zhai-hero-chip-a">本周新增 <i>86</i> 条精品内容</div>
+        <div class="zhai-hero-chip zhai-hero-chip-b">社区在线 <i>2.4 万</i> 同好</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="zhai-section zhai-about" id="zhaiAbout">
+    <div class="zhai-wrap">
+      <div class="zhai-section-head">
+        <div class="zhai-section-kicker">BRAND PERSPECTIVE</div>
+        <h2>一间属于宅文化的<em>影像福利社</em></h2>
+        <p class="zhai-section-desc">从兴趣出发，重新理解「福利」二字：不是速食，而是被认真整理的快乐。</p>
+      </div>
+      <div class="zhai-about-grid">
+        <div class="zhai-about-text">
+          <p>亚洲宅男福利社并不是一个单纯的视频聚合站。我们更愿意把它描述为一间持续运营的影像福利社：货架上摆的不是商品，而是一群人对动画、手办、游戏、同人创作与深夜文化的长期观察。官方网站上线至今，团队始终坚持原创拍摄与真实访谈，拒绝搬运与拼接，把每一条内容都当成可以签名的作品。</p>
+          <p>在内容方向上，我们把「宅」理解为一种生活方式，而不是标签。有人因为一柜子手办学会收纳与灯光，有人因为番剧台词开始研究日本战后社会，有人因为一场线下漫展结识了十年好友。这些具体的、带着体温的经验，才是宅文化真正的质感。亚洲宅男福利社所做的，是用镜头把它们留下来，让后来的人少走一点弯路，也多一分共鸣。</p>
+          <h3>我们关注什么</h3>
+          <p>第一是番剧与作品的深度解析，从分镜、配乐到时代背景，尽量讲清楚「为什么好看」；第二是收藏与周边文化，手办开箱、展柜布光、二次元空间改造，都是社区里讨论度极高的实用话题；第三是创作者本身，我们相信人是内容的源头，因此持续投入创作者扶持计划，提供拍摄设备、剪辑指导与版权咨询；第四是线下现场，漫展、同人展、主题快闪店的现场记录，让无法到场的同好也能共享那份热闹。</p>
+          <h3>为什么叫「福利社」</h3>
+          <p>在中文语境里，「福利社」带着一种旧式单位的亲切感，它意味着一个大家可以放心进来逛、随便翻翻、顺手带走点什么的公共空间。我们希望亚洲宅男福利社就是这样的地方：不必端着，不必伪装资深，喜欢就是喜欢。官网因此保留了大量社区入口，评论区、投稿通道、创作者问答都长期开放，任何一条内容都可以被讨论、被补充、被纠正。</p>
+          <h3>内容生态与品质坚持</h3>
+          <p>平台目前采用「编辑部企划 + 创作者投稿 + 品牌合作」三条内容线并行。编辑部负责专题深度与行业观察，创作者提供多元视角与在地现场，品牌合作则让我们有条件把制作规格提升到高清乃至 4K。所有合作内容都会明确标注，不做隐性植入。我们深知口碑来自长期一致的品质，因此在审核、字幕、封面与版权四个环节设置了独立复核，宁可少发一条，也不让粗糙内容稀释社区氛围。</p>
+          <p>面向未来，亚洲宅男福利社会继续深耕宅文化这一垂直领域，把内容做深、把社区做暖、把创作者服务做扎实。我们相信，真正值得信赖的品牌不是喊出来的，而是一条一条内容、一次一次互动积累出来的。</p>
+        </div>
+        <aside class="zhai-about-aside">
+          <div class="zhai-aside-card">
+            <h4>品牌定位</h4>
+            <p>宅文化垂直领域的原创视频品牌与内容社区，面向动画、手办、游戏、同人创作爱好者提供精品内容与交流空间。</p>
+          </div>
+          <div class="zhai-aside-card">
+            <h4>内容准则</h4>
+            <p>原创优先、来源可溯、标注清晰、尊重版权。涉及二次创作的内容均取得原作者授权或遵循公开许可。</p>
+          </div>
+          <div class="zhai-aside-card">
+            <h4>社区气质</h4>
+            <p>包容、真实、有分寸。允许不同口味共存，反对拉踩与攻击，鼓励把喜欢讲出理由。</p>
+          </div>
+          <div class="zhai-aside-card">
+            <h4>持续运营</h4>
+            <p>自成立以来保持每周固定更新节奏，企业动态与内容日历公开可查，欢迎监督。</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点视频 -->
+  <section class="zhai-section" id="zhaiFocus">
+    <div class="zhai-wrap">
+      <div class="zhai-section-head">
+        <div class="zhai-section-kicker">FOCUS · 本周焦点</div>
+        <h2>编辑部力荐的<em>六条内容</em></h2>
+        <p class="zhai-section-desc">从企划到成片平均打磨 21 天，焦点位只放我们自己也愿意反复看的内容。</p>
+      </div>
+      <div class="zhai-focus-grid">
+        <article class="zhai-card zhai-focus-big">
+          <div class="zhai-cover">
+            <svg viewBox="0 0 480 252" role="img" aria-label="深夜番剧拆解第三季封面：放映厅银幕与观众剪影">
+              <defs>
+                <linearGradient id="zhaiF1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#2b2150"/><stop offset="1" stop-color="#5a2a55"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="252" fill="url(#zhaiF1)"/>
+              <rect x="70" y="42" width="340" height="150" rx="10" fill="#12101f" stroke="#6b5fa8"/>
+              <rect x="86" y="58" width="308" height="118" rx="6" fill="#8d7bff" opacity=".28"/>
+              <polygon points="212,96 272,117 212,138" fill="#ff5c8a"/>
+              <g fill="#0d0b18">
+                <circle cx="120" cy="216" r="16"/><circle cx="170" cy="222" r="13"/>
+                <circle cx="330" cy="220" r="15"/><circle cx="378" cy="214" r="12"/>
+              </g>
+              <text x="92" y="34" font-size="12" fill="#ffc46b" letter-spacing="3">EP.08 / FINAL</text>
+            </svg>
+            <span class="zhai-cover-tag">深度解析</span>
+            <span class="zhai-cover-dur">42:16</span>
+          </div>
+          <div class="zhai-card-body">
+            <h3>深夜番剧拆解 EP.08：分镜、留白与那场没有台词的告别</h3>
+            <p>用 42 分钟讲清楚一场三分钟的戏——我们逐帧拆解了本季讨论度最高的告别镜头，从机位、景别到环境音的消失，聊聊动画如何用「不说」完成最重的表达。片中同步对比了原作漫画与动画分镜稿，适合想入门视听语言的新手同好。</p>
+            <div class="zhai-card-meta">
+              <span class="zhai-avatar" style="background:#ff5c8a">井</span>
+              <span>井上镜</span><span>·</span><span>11 月 17 日</span><span>·</span><span>2.6 万次播放</span>
+            </div>
+            <div class="zhai-card-actions">
+              <button class="zhai-act zhai-like" type="button">♡ 点赞 <b>1842</b></button>
+              <button class="zhai-act zhai-save" type="button">☆ 收藏</button>
+              <button class="zhai-act zhai-share" type="button">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+        <div class="zhai-focus-side">
+          <article class="zhai-card zhai-mini">
+            <div class="zhai-cover">
+              <svg viewBox="0 0 200 138" role="img" aria-label="手办展柜布光实拍封面：暖光下的三只小人偶">
+                <rect width="200" height="138" fill="#241d3d"/>
+                <rect x="16" y="16" width="168" height="106" rx="8" fill="#1a1630" stroke="#4b4380"/>
+                <rect x="28" y="28" width="44" height="82" rx="6" fill="#ffc46b" opacity=".22"/>
+                <rect x="78" y="40" width="44" height="70" rx="6" fill="#ff5c8a" opacity=".3"/>
+                <rect x="128" y="52" width="44" height="58" rx="6" fill="#58e3c9" opacity=".25"/>
+                <circle cx="50" cy="66" r="10" fill="#ffc46b"/>
+                <rect x="40" y="80" width="20" height="24" rx="4" fill="#ffc46b" opacity=".7"/>
+                <circle cx="100" cy="78" r="10" fill="#ff5c8a"/>
+                <rect x="90" y="92" width="20" height="14" rx="4" fill="#ff5c8a" opacity=".7"/>
+                <circle cx="150" cy="88" r="9" fill="#58e3c9"/>
+                <rect x="141" y="100" width="18" height="8" rx="3" fill="#58e3c9" opacity=".7"/>
+              </svg>
+              <span class="zhai-cover-tag">收藏日常</span>
+              <span class="zhai-cover-dur">18:04</span>
+            </div>
+            <div class="zhai-card-body">
+              <h3>三平米展柜改造记：预算 800 元的灯光方案</h3>
+              <p>租房党也能抄的作业，含灯位图与选购清单。</p>
+              <div class="zhai-card-meta"><span class="zhai-avatar" style="background:#58e3c9">柜</span><span>柜长阿哲</span><span>· 1.2 万播放</span></div>
+            </div>
+          </article>
+          <article class="zhai-card zhai-mini">
+            <div class="zhai-cover">
+              <svg viewBox="0 0 200 138" role="img" aria-label="同人展现场记录封面：展馆走廊与人流">
+                <rect width="200" height="138" fill="#182338"/>
+                <path d="M0 138 L60 44 L140 44 L200 138 Z" fill="#22304d"/>
+                <rect x="76" y="52" width="48" height="30" rx="4" fill="#8d7bff" opacity=".6"/>
+                <g fill="#ff5c8a" opacity=".75">
+                  <circle cx="72" cy="104" r="8"/><circle cx="104" cy="112" r="9"/><circle cx="136" cy="102" r="7"/>
+                </g>
+                <g fill="#58e3c9" opacity=".7">
+                  <rect x="24" y="86" width="26" height="34" rx="3"/>
+                  <rect x="150" y="86" width="26" height="34" rx="3"/>
+                </g>
+                <text x="80" y="74" font-size="11" fill="#ffffff" opacity=".85">COMIC</text>
+              </svg>
+              <span class="zhai-cover-tag">现场记录</span>
+              <span class="zhai-cover-dur">26:33</span>
+            </div>
+            <div class="zhai-card-body">
+              <h3>同人展一日：从早八排队到闭馆散场</h3>
+              <p>跟着摄影机走完 11 小时，记录摊主与逛展人的真实状态。</p>
+              <div class="zhai-card-meta"><span class="zhai-avatar" style="background:#8d7bff">展</span><span>现场组小鹿</span><span>· 2.1 万播放</span></div>
+            </div>
+          </article>
+          <article class="zhai-card zhai-mini">
+            <div class="zhai-cover">
+              <svg viewBox="0 0 200 138" role="img" aria-label="独立游戏试玩封面：像素风游戏画面">
+                <rect width="200" height="138" fill="#141a2c"/>
+                <rect x="30" y="24" width="140" height="90" rx="6" fill="#1f2a44" stroke="#4d5f8c"/>
+                <g fill="#58e3c9">
+                  <rect x="42" y="92" width="10" height="10"/><rect x="52" y="92" width="10" height="10"/>
+                  <rect x="62" y="82" width="10" height="10"/><rect x="72" y="72" width="10" height="10"/>
+                </g>
+                <g fill="#ff5c8a">
+                  <rect x="122" y="44" width="10" height="10"/><rect x="132" y="54" width="10" height="10"/>
+                  <rect x="142" y="64" width="10" height="10"/>
+                </g>
+                <circle cx="100" cy="60" r="7" fill="#ffc46b"/>
+                <text x="42" y="40" font-size="10" fill="#8d7bff">PIXEL DEMO</text>
+              </svg>
+              <span class="zhai-cover-tag">试玩测评</span>
+              <span class="zhai-cover-dur">31:47</span>
+            </div>
+            <div class="zhai-card-body">
+              <h3>三部国产独立游戏试玩：小体量里的大野心</h3>
+              <p>不谈分数，只聊手感、叙事与美术上的取舍。</p>
+              <div class="zhai-card-meta"><span class="zhai-avatar" style="background:#ffc46b">游</span><span>手柄不离手</span><span>· 1.8 万播放</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="zhai-section" id="zhaiFlow">
+    <div class="zhai-wrap">
+      <div class="zhai-section-head">
+        <div class="zhai-section-kicker">TRENDING · 热门视频流</div>
+        <h2>社区正在看的<em>九条原创内容</em></h2>
+        <p class="zhai-section-desc">按标签筛选你感兴趣的题材，所有内容均标注来源与制作方，正版授权可查。</p>
+      </div>
+      <div class="zhai-tags" id="zhaiTagBar">
+        <button class="zhai-tag-btn is-active" type="button" data-zhai-tag="all">全部</button>
+        <button class="zhai-tag-btn" type="button" data-zhai-tag="番剧">番剧解析</button>
+        <button class="zhai-tag-btn" type="button" data-zhai-tag="收藏">收藏周边</button>
+        <button class="zhai-tag-btn" type="button" data-zhai-tag="游戏">游戏日常</button>
+        <button class="zhai-tag-btn" type="button" data-zhai-tag="同人">同人创作</button>
+        <button class="zhai-tag-btn" type="button" data-zhai-tag="空间">二次元空间</button>
+      </div>
+      <div class="zhai-flow-grid" id="zhaiFlowGrid">
+
+        <article class="zhai-card" data-zhai-tag="番剧">
+          <div class="zhai-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="番剧配乐盘点封面：耳机与声波">
+              <rect width="320" height="180" fill="#221a3e"/>
+              <g stroke="#8d7bff" stroke-width="3" fill="none" opacity=".8">
+                <path d="M30 120 q18 -34 36 0 t36 0 t36 0 t36 0 t36 0 t36 0"/>
+              </g>
+              <circle cx="248" cy="70" r="40" fill="none" stroke="#ff5c8a" stroke-width="6"/>
+              <circle cx="248" cy="70" r="14" fill="#ff5c8a"/>
+              <rect x="60" y="46" width="90" height="10" rx="5" fill="#58e3c9" opacity=".6"/>
+              <rect x="60" y="66" width="60" height="8" rx="4" fill="#5a5188"/>
+            </svg>
+            <span class="zhai-cover-tag">番剧</span><span class="zhai-cover-dur">22:10</span>
+          </div>
+          <div class="zhai-card-body">
+            <h3>被低估的十首番剧配乐：旋律如何替角色说话</h3>
+            <p>从 OP 到插入歌，聊聊那些一响起就让人鼻酸的三分钟。</p>
+            <div class="zhai-card-meta"><span class="zhai-avatar" style="background:#8d7bff">音</span><span>耳朵养成所</span><span>· 3.4 万播放</span></div>
+            <div class="zhai-card-actions">
+              <button class="zhai-act zhai-like" type="button">♡ 点赞 <b>964</b></button>
+              <button class="zhai-act zhai-save" type="button">☆ 收藏</button>
+              <button class="zhai-act zhai-share" type="button">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zhai-card" data-zhai-tag="收藏">
+          <div class="zhai-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="手办开箱封面：包装盒与防撞泡沫">
+              <rect width="320" height="180" fill="#2a1f2e"/>
+              <rect x="90" y="34" width="140" height="112" rx="8" fill="#3a2a3e" stroke="#ffc46b"/>
+              <rect x="104" y="48" width="112" height="52" rx="4" fill="#ffc46b" opacity=".28"/>
+              <circle cx="160" cy="74" r="18" fill="#ffc46b" opacity=".8"/>
+              <rect x="104" y="112" width="76" height="9" rx="4" fill="#7a5f4a"/>
+              <rect x="104" y="126" width="48" height="9" rx="4" fill="#5a4650"/>
+              <g fill="#ff5c8a" opacity=".7"><circle cx="66" cy="56" r="6"/><circle cx="60" cy="120" r="8"/></g>
+            </svg>
+            <span class="zhai-cover-tag">收藏</span><span class="zhai-cover-dur">16:45</span>
+          </div>
+          <div class="zhai-card-body">
+            <h3>等了七个月的手办终于到货：开箱与细节检视</h3>
+            <p>涂层、分件、替换脸，逐一对比官图与实物差异。</p>
+            <div class="zhai-card-meta"><span class="zhai-avatar" style="background:#ffc46b">盒</span><span>盒控老陈</span><span>· 2.9 万播放</span></div>
+            <div class="zhai-card-actions">
+              <button class="zhai-act zhai-like" type="button">♡ 点赞 <b>731</b></button>
+              <button class="zhai-act zhai-save" type="button">☆ 收藏</button>
+              <button class="zhai-act zhai-share" type="button">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zhai-card" data-zhai-tag="游戏">
+          <div class="zhai-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="游戏通宵实录封面：深夜桌面与手柄">
+              <rect width="320" height="180" fill="#141124"/>
+              <rect x="40" y="96" width="240" height="12" rx="6" fill="#2b2444"/>
+              <rect x="70" y="54" width="86" height="42" rx="6" fill="#58e3c9" opacity=".28"/>
+              <rect x="176" y="40" width="70" height="56" rx="6" fill="#8d7bff" opacity=".3"/>
+              <rect x="118" y="108" width="84" height="34" rx="17" fill="#1f1a36" stroke="#ff5c8a"/>
+              <circle cx="140" cy="125" r="6" fill="#ff5c8a"/>
+              <circle cx="180" cy="125" r="6" fill="#58e3c9"/>
+              <circle cx="258" cy="30" r="14" fill="#ffc46b" opacity=".5"/>
+            </svg>
+            <span class="zhai-cover-tag">游戏</span><span class="zhai-cover-dur">34:02</span>
+          </div>
+          <div class="zhai-card-body">
+            <h3>凌晨三点的联机实录：我们为什么还在打同一张图</h3>
+            <p>四个老朋友，一张老地图，聊的是游戏也是这些年。</p>
+            <div class="zhai-card-meta"><span class="zhai-avatar" style="background:#58e3c9">夜</span><span>夜猫联机组</span><span>· 4.1 万播放</span></div>
+            <div class="zhai-card-actions">
+              <button class="zhai-act zhai-like" type="button">♡ 点赞 <b>1288</b></button>
+              <button class="zhai-act zhai-save" type="button">☆ 收藏</button>
+              <button class="zhai-act zhai-share" type="button">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zhai-card" data-zhai-tag="同人">
+          <div class="zhai-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="同人本排版封面：摊开的画稿与色卡">
+              <rect width="320" height="180" fill="#1d1830"/>
+              <path d="M40 40 L160 30 L280 40 L280 150 L160 158 L40 150 Z" fill="#262042" stroke="#4b4380"/>
+              <path d="M160 30 L160 158" stroke="#4b4380"/>
+              <g fill="#ff5c8a"><circle cx="92" cy="76" r="16"/><rect x="72" y="100" width="40" height="26" rx="4" opacity=".6"/></g>
+              <g fill="#58e3c9"><rect x="196" y="66" width="42" height="12" rx="6"/><rect x="196" y="86" width="28" height="12" rx="6" opacity=".7"/><rect x="196" y="106" width="34" height="12" rx="6" opacity=".5"/></g>
+            </svg>
+            <span class="zhai-cover-tag">同人</span><span class="zhai-cover-dur">19:28</span>
+          </div>
+          <div class="zhai-card-body">
+            <h3>从草稿到成书：一本同人志的四十天</h3>
+            <p>排版、校对、印厂沟通，全流程记录与踩坑清单。</p>
+            <div class="zhai-card-meta"><span class="zhai-avatar" style="background:#ff5c8a">纸</span><span>纸张研究所</span><span>· 2.3 万播放</span></div>
+            <div class="zhai-card-actions">
+              <button class="zhai-act zhai-like" type="button">♡ 点赞 <b>846</b></button>
+              <button class="zhai-act zhai-save" type="button">☆ 收藏</button>
+              <button class="zhai-act zhai-share" type="button">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zhai-card" data-zhai-tag="空间">
+          <div class="zhai-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="小房间改造封面：贴满海报的墙角与书桌">
+              <rect width="320" height="180" fill="#1a2030"/>
+              <rect x="0" y="0" width="320" height="120" fill="#202a3f"/>
+              <rect x="24" y="24" width="58" height="76" rx="4" fill="#8d7bff" opacity=".5"/>
+              <rect x="92" y="36" width="50" height="64" rx="4" fill="#ff5c8a" opacity=".45"/>
+              <rect x="152" y="20" width="46" height="80" rx="4" fill="#58e3c9" opacity=".4"/>
+              <rect x="0" y="120" width="320" height="60" fill="#141a28"/>
+              <rect x="196" y="96" width="104" height="12" rx="6" fill="#3a4560"/>
+              <rect x="214" y="70" width="30" height="26" rx="4" fill="#ffc46b" opacity=".7"/>
+              <rect x="254" y="58" width="30" height="38" rx="4" fill="#8d7bff" opacity=".6"/>
+            </svg>
+            <span class="zhai-cover-tag">空间</span><span class="zhai-cover-dur">24:15</span>
+          </div>
+          <div class="zhai-card-body">
+            <h3>出租屋的二次元角落：不打孔也能布置出展陈感</h3>
+            <p>洞洞板、灯带与海报墙的三种低成本组合方案。</p>
+            <div class="zhai-card-meta"><span class="zhai-avatar" style="background:#8d7bff">隅</span><span>隅田房间</span><span>· 3.7 万播放</span></div>
+            <div class="zhai-card-actions">
+              <button class="zhai-act zhai-like" type="button">♡ 点赞 <b>1502</b></button>
+              <button class="zhai-act zhai-save" type="button">☆ 收藏</button>
+              <button class="zhai-act zhai-share" type="button">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zhai-card" data-zhai-tag="番剧">
+          <div class="zhai-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="动画分镜稿封面：手绘格线与人物剪影">
+              <rect width="320" height="180" fill="#241f38"/>
+              <g stroke="#5a5188" stroke-width="1.5">
+                <rect x="24" y="24" width="128" height="60" fill="none"/>
+                <rect x="168" y="24" width="128" height="60" fill="none"/>
+                <rect x="24" y="96" width="128" height="60" fill="none"/>
+                <rect x="168" y="96" width="128" height="60" fill="none"/>
+              </g>
+              <circle cx="88" cy="48" r="14" fill="#ff5c8a" opacity=".8"/>
+              <path d="M64 78 q24 -20 48 0" stroke="#ff5c8a" fill="none" stroke-width="3"/>
+              <path d="M190 74 l30 -24 l30 24 Z" fill="#58e3c9" opacity=".6"/>
+              <rect x="44" y="118" width="88" height="8" rx="4" fill="#8d7bff" opacity=".6"/>
+              <rect x="44" y="134" width="60" height="8" rx="4" fill="#5a5188"/>
+              <circle cx="232" cy="126" r="18" fill="none" stroke="#ffc46b" stroke-width="3"/>
+            </svg>
+            <span class="zhai-cover-tag">番剧</span><span class="zhai-cover-dur">28:40</span>
+          </div>
+          <div class="zhai-card-body">
+            <h3>分镜稿怎么读：从一格画面看导演的取舍</h3>
+            <p>给普通观众的入门课，学会看懂构图与节奏提示。</p>
+            <div class="zhai-card-meta"><span class="zhai-avatar" style="background:#ff5c8a">镜</span><span>井上镜</span><span>· 2.4 万播放</span></div>
+            <div class="zhai-card-actions">
+              <button class="zhai-act zhai-like" type="button">♡ 点赞 <b>1024</b></button>
+              <button class="zhai-act zhai-save" type="button">☆ 收藏</button>
+              <button class="zhai-act zhai-share" type="button">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zhai-card" data-zhai-tag="收藏">
+          <div class="zhai-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="二手周边避坑封面：对比清单与放大镜">
+              <rect width="320" height="180" fill="#1b1a2c"/>
+              <rect x="28" y="34" width="120" height="112" rx="8" fill="#242240" stroke="#4b4380"/>
+              <g fill="#58e3c9"><rect x="44" y="52" width="60" height="8" rx="4"/><rect x="44" y="70" width="88" height="8" rx="4" opacity=".7"/><rect x="44" y="88" width="72" height="8" rx="4" opacity=".5"/><rect x="44" y="106" width="50" height="8" rx="4" opacity=".4"/></g>
+              <circle cx="228" cy="88" r="40" fill="none" stroke="#ffc46b" stroke-width="5"/>
+              <line x1="256" y1="118" x2="288" y2="150" stroke="#ffc46b" stroke-width="7" stroke-linecap="round"/>
+              <circle cx="228" cy="88" r="26" fill="#ffc46b" opacity=".14"/>
+            </svg>
+            <span class="zhai-cover-tag">收藏</span><span class="zhai-cover-dur">15:33</span>
+          </div>
+          <div class="zhai-card-body">
+            <h3>二手周边避坑指南：九个常见问题与验货话术</h3>
+            <p>从包装封条到版权标，把肉眼能查的都教给你。</p>
+            <div class="zhai-card-meta"><span class="zhai-avatar" style="background:#ffc46b">鉴</span><span>鉴物小组</span><span>· 5.2 万播放</span></div>
+            <div class="zhai-card-actions">
+              <button class="zhai-act zhai-like" type="button">♡ 点赞 <b>2107</b></button>
+              <button class="zhai-act zhai-save" type="button">☆ 收藏</button>
+              <button class="zhai-act zhai-share" type="button">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zhai-card" data-zhai-tag="游戏">
+          <div class="zhai-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="掌机收藏封面：三台不同年代的掌机排列">
+              <rect width="320" height="180" fill="#191c2c"/>
+              <rect x="20" y="70" width="88" height="52" rx="8" fill="#2c3348" stroke="#5a6b96"/>
+              <rect x="34" y="82" width="40" height="28" rx="3" fill="#58e3c9" opacity=".5"/>
+              <rect x="116" y="60" width="88" height="62" rx="8" fill="#3a3350" stroke="#8d7bff"/>
+              <rect x="132" y="74" width="56" height="34" rx="3" fill="#8d7bff" opacity=".45"/>
+              <rect x="212" y="52" width="88" height="70" rx="10" fill="#2a2438" stroke="#ff5c8a"/>
+              <rect x="228" y="66" width="56" height="42" rx="4" fill="#ff5c8a" opacity=".4"/>
+              <text x="24" y="150" font-size="11" fill="#7d779e">1998 — 2008 — 2023</text>
+            </svg>
+            <span class="zhai-cover-tag">游戏</span><span class="zhai-cover-dur">21:06</span>
+          </div>
+          <div class="zhai-card-body">
+            <h3>三台掌机的二十年：我的移动游戏记忆</h3>
+            <p>不评测参数，只讲那些在被窝里通关的夜晚。</p>
+            <div class="zhai-card-meta"><span class="zhai-avatar" style="background:#58e3c9">掌</span><span>掌上旧事</span><span>· 1.9 万播放</span></div>
+            <div class="zhai-card-actions">
+              <button class="zhai-act zhai-like" type="button">♡ 点赞 <b>689</b></button>
+              <button class="zhai-act zhai-save" type="button">☆ 收藏</button>
+              <button class="zhai-act zhai-share" type="button">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zhai-card" data-zhai-tag="同人">
+          <div class="zhai-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="角色配音练习封面：麦克风与音轨">
+              <rect width="320" height="180" fill="#211a30"/>
+              <rect x="128" y="26" width="64" height="96" rx="32" fill="#2f2748" stroke="#ff5c8a" stroke-width="3"/>
+              <line x1="160" y1="122" x2="160" y2="146" stroke="#ff5c8a" stroke-width="4"/>
+              <line x1="132" y1="146" x2="188" y2="146" stroke="#ff5c8a" stroke-width="4"/>
+              <g fill="#58e3c9" opacity=".75">
+                <rect x="40" y="60" width="10" height="30" rx="5"/><rect x="58" y="46" width="10" height="58" rx="5"/>
+                <rect x="76" y="70" width="10" height="22" rx="5"/><rect x="94" y="52" width="10" height="46" rx="5"/>
+              </g>
+              <g fill="#8d7bff" opacity=".7">
+                <rect x="216" y="58" width="10" height="34" rx="5"/><rect x="234" y="44" width="10" height="62" rx="5"/>
+                <rect x="252" y="66" width="10" height="26" rx="5"/><rect x="270" y="50" width="10" height="50" rx="5"/>
+              </g>
+            </svg>
+            <span class="zhai-cover-tag">同人</span><span class="zhai-cover-dur">17:52</span>
+          </div>
+          <div class="zhai-card-body">
+            <h3>角色配音练习三十天：非科班也能练的五个方法</h3>
+            <p>气息、口型、情绪层次，附每日练习时间表。</p>
+            <div class="zhai-card-meta"><span class="zhai-avatar" style="background:#ff5c8a">声</span><span>声带散步</span><span>· 2.7 万播放</span></div>
+            <div class="zhai-card-actions">
+              <button class="zhai-act zhai-like" type="button">♡ 点赞 <b>913</b></button>
+              <button class="zhai-act zhai-save" type="button">☆ 收藏</button>
+              <button class="zhai-act zhai-share" type="button">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="zhai-section" id="zhaiTopic">
+    <div class="zhai-wrap">
+      <div class="zhai-section-head">
+        <div class="zhai-section-kicker">SERIES · 专题企划</div>
+        <h2>正在更新的<em>四个长期企划</em></h2>
+        <p class="zhai-section-desc">专题是我们最费功夫的部分，通常以季度为周期推进，欢迎持续关注与投稿参与。</p>
+      </div>
+      <div class="zhai-topic-grid">
+        <article class="zhai-topic">
+          <div class="zhai-topic-visual">
+            <svg viewBox="0 0 320 180" role="img" aria-label="深夜番剧拆解专题封面：月亮与放映机">
+              <rect width="320" height="180" fill="#1a1730"/>
+              <circle cx="252" cy="52" r="30" fill="#ffc46b" opacity=".3"/>
+              <circle cx="252" cy="52" r="18" fill="#ffc46b" opacity=".6"/>
+              <rect x="36" y="86" width="120" height="60" rx="8" fill="#2a2444" stroke="#8d7bff"/>
+              <circle cx="70" cy="116" r="16" fill="#8d7bff" opacity=".7"/>
+              <circle cx="124" cy="116" r="16" fill="#ff5c8a" opacity=".7"/>
+              <path d="M156 100 L240 70 L240 150 L156 130 Z" fill="#58e3c9" opacity=".18"/>
+              <text x="36" y="70" font-size="12" fill="#58e3c9" letter-spacing="3">SEASON 3</text>
+            </svg>
+            <span class="zhai-topic-status">更新至 8 期</span>
+          </div>
+          <div class="zhai-topic-info">
+            <h3>深夜番剧拆解</h3>
+            <p>每期选一部讨论度高的作品，从视听语言、时代背景到角色弧光逐层拆解，配套图文笔记与分镜资料下载。</p>
+          </div>
+        </article>
+        <article class="zhai-topic">
+          <div class="zhai-topic-visual">
+            <svg viewBox="0 0 320 180" role="img" aria-label="三平米展柜计划专题封面：层架上的人偶剪影">
+              <rect width="320" height="180" fill="#241d2f"/>
+              <rect x="40" y="36" width="240" height="108" rx="8" fill="#1c1728" stroke="#ffc46b"/>
+              <line x1="40" y1="88" x2="280" y2="88" stroke="#4b4380" stroke-width="3"/>
+              <g fill="#ffc46b" opacity=".8"><circle cx="90" cy="66" r="12"/><rect x="78" y="76" width="24" height="10" rx="3"/></g>
+              <g fill="#ff5c8a" opacity=".8"><circle cx="170" cy="66" r="12"/><rect x="158" y="76" width="24" height="10" rx="3"/></g>
+              <g fill="#58e3c9" opacity=".8"><circle cx="240" cy="66" r="12"/><rect x="228" y="76" width="24" height="10" rx="3"/></g>
+              <g fill="#5a5188"><rect x="70" y="108" width="60" height="10" rx="4"/><rect x="150" y="108" width="46" height="10" rx="4"/></g>
+            </svg>
+            <span class="zhai-topic-status">长期连载</span>
+          </div>
+          <div class="zhai-topic-info">
+            <h3>三平米展柜计划</h3>
+            <p>面向租房党与预算有限同好的空间改造企划，包含灯光、防尘、陈列动线的实测方案，每期附可复制的物料清单。</p>
+          </div>
+        </article>
+        <article class="zhai-topic">
+          <div class="zhai-topic-visual">
+            <svg viewBox="0 0 320 180" role="img" aria-label="创作者现场专题封面：摄影机与打板">
+              <rect width="320" height="180" fill="#1c2030"/>
+              <rect x="52" y="52" width="120" height="76" rx="10" fill="#262c42" stroke="#58e3c9"/>
+              <circle cx="112" cy="90" r="24" fill="#58e3c9" opacity=".28"/>
+              <circle cx="112" cy="90" r="14" fill="#58e3c9" opacity=".7"/>
+              <rect x="172" y="80" width="46" height="20" rx="4" fill="#3a4260"/>
+              <rect x="232" y="60" width="56" height="40" rx="4" fill="#31324a" stroke="#ff5c8a"/>
+              <line x1="232" y1="60" x2="288" y2="100" stroke="#ff5c8a" stroke-dasharray="6 5"/>
+            </svg>
+            <span class="zhai-topic-status">更新至 5 期</span>
+          </div>
+          <div class="zhai-topic-info">
+            <h3>创作者现场</h3>
+            <p>走进创作者的工作台，拍下他们的日常与工具箱。不是成功学访谈，而是关于怎么开始、怎么坚持、怎么面对数据低谷。</p>
+          </div>
+        </article>
+        <article class="zhai-topic">
+          <div class="zhai-topic-visual">
+            <svg viewBox="0 0 320 180" role="img" aria-label="同人创作手册专题封面：活页夹与彩色标签">
+              <rect width="320" height="180" fill="#241c2c"/>
+              <rect x="66" y="28" width="188" height="124" rx="8" fill="#2c2338" stroke="#8d7bff"/>
+              <line x1="120" y1="28" x2="120" y2="152" stroke="#4b4380"/>
+              <g fill="#58e3c9" opacity=".8"><rect x="140" y="48" width="90" height="9" rx="4"/><rect x="140" y="68" width="66" height="9" rx="4"/><rect x="140" y="88" width="80" height="9" rx="4"/></g>
+              <g fill="#ff5c8a"><circle cx="92" cy="56" r="8"/><circle cx="92" cy="86" r="8" opacity=".7"/><circle cx="92" cy="116" r="8" opacity=".5"/></g>
+            </svg>
+            <span class="zhai-topic-status">更新至 12 篇</span>
+          </div>
+          <div class="zhai-topic-info">
+            <h3>同人创作手册</h3>
+            <p>从分镜、排版到印厂沟通的完整流程手册，由多位长期创作同人志的作者共同撰写，所有模板开放下载。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="zhai-section" id="zhaiCreator">
+    <div class="zhai-wrap">
+      <div class="zhai-section-head">
+        <div class="zhai-section-kicker">CREATORS · 创作者矩阵</div>
+        <h2>平台长期合作的<em>八位创作者</em></h2>
+        <p class="zhai-section-desc">左滑查看更多。点击「认识 TA」可查看创作者档案与合作方式，欢迎品牌方联系共创。</p>
+      </div>
+      <div class="zhai-creator-grid">
+        <article class="zhai-creator">
+          <div class="zhai-creator-avatar" style="background:linear-gradient(135deg,#ff5c8a,#ffc46b)">井</div>
+          <h3>井上镜</h3>
+          <div class="zhai-creator-field">番剧解析 / 视听语言</div>
+          <p>前影视后期从业者，擅长把复杂的镜头语言讲成普通人听得懂的话，更新稳定，笔记详尽。</p>
+          <div class="zhai-creator-data"><span><b>128</b>作品</span><span><b>18.6万</b>关注</span></div>
+          <button class="zhai-more-link zhai-author-btn" type="button" data-zhai-author="井上镜">认识 TA</button>
+        </article>
+        <article class="zhai-creator">
+          <div class="zhai-creator-avatar" style="background:linear-gradient(135deg,#58e3c9,#8d7bff)">柜</div>
+          <h3>柜长阿哲</h3>
+          <div class="zhai-creator-field">收藏周边 / 空间改造</div>
+          <p>把三平米出租屋改造成小型展陈空间的人，乐于分享预算表与失败经验，社区口碑极好。</p>
+          <div class="zhai-creator-data"><span><b>96</b>作品</span><span><b>14.2万</b>关注</span></div>
+          <button class="zhai-more-link zhai-author-btn" type="button" data-zhai-author="柜长阿哲">认识 TA</button>
+        </article>
+        <article class="zhai-creator">
+          <div class="zhai-creator-avatar" style="background:linear-gradient(135deg,#8d7bff,#ff5c8a)">耳</div>
+          <h3>耳朵养成所</h3>
+          <div class="zhai-creator-field">番剧配乐 / 声音研究</div>
+          <p>音乐制作出身，专门聊动画配乐与音效设计，节目里常能听到他自己扒的谱子。</p>
+          <div class="zhai-creator-data"><span><b>74</b>作品</span><span><b>11.8万</b>关注</span></div>
+          <button class="zhai-more-link zhai-author-btn" type="button" data-zhai-author="耳朵养成所">认识 TA</button>
+        </article>
+        <article class="zhai-creator">
+          <div class="zhai-creator-avatar" style="background:linear-gradient(135deg,#ffc46b,#ff5c8a)">盒</div>
+          <h3>盒控老陈</h3>
+          <div class="zhai-creator-field">手办开箱 / 细节检视</div>
+          <p>收藏龄十二年，镜头下的手办细节清晰到能数清发丝，坚持不接未使用过的产品推广。</p>
+          <div class="zhai-creator-data"><span><b>210</b>作品</span><span><b>22.4万</b>关注</span></div>
+          <button class="zhai-more-link zhai-author-btn" type="button" data-zhai-author="盒控老陈">认识 TA</button>
+        </article>
+        <article class="zhai-creator">
+          <div class="zhai-creator-avatar" style="background:linear-gradient(135deg,#58e3c9,#ffc46b)">夜</div>
+          <h3>夜猫联机组</h3>
+          <div class="zhai-creator-field">游戏日常 / 多人实况</div>
+          <p>四个人、四台机器、一个十年老群。他们的联机实录更像是一档深夜电台节目。</p>
+          <div class="zhai-creator-data"><span><b>143</b>作品</span><span><b>19.7万</b>关注</span></div>
+          <button class="zhai-more-link zhai-author-btn" type="button" data-zhai-author="夜猫联机组">认识 TA</button>
+        </article>
+        <article class="zhai-creator">
+          <div class="zhai-creator-avatar" style="background:linear-gradient(135deg,#ff5c8a,#8d7bff)">纸</div>
+          <h3>纸张研究所</h3>
+          <div class="zhai-creator-field">同人创作 / 印刷工艺</div>
+          <p>自己画、自己排、自己跑印厂，把同人志制作的每一个坑都踩过一遍并记录下来。</p>
+          <div class="zhai-creator-data"><span><b>61</b>作品</span><span><b>8.9万</b>关注</span></div>
+          <button class="zhai-more-link zhai-author-btn" type="button" data-zhai-author="纸张研究所">认识 TA</button>
+        </article>
+        <article class="zhai-creator">
+          <div class="zhai-creator-avatar" style="background:linear-gradient(135deg,#8d7bff,#58e3c9)">展</div>
+          <h3>现场组小鹿</h3>
+          <div class="zhai-creator-field">城市探索 / 展会现场</div>
+          <p>常年背着稳定器跑漫展与快闪店，擅长在嘈杂现场抓到最自然的表情与对话。</p>
+          <div class="zhai-creator-data"><span><b>88</b>作品</span><span><b>13.1万</b>关注</span></div>
+          <button class="zhai-more-link zhai-author-btn" type="button" data-zhai-author="现场组小鹿">认识 TA</button>
+        </article>
+        <article class="zhai-creator">
+          <div class="zhai-creator-avatar" style="background:linear-gradient(135deg,#ffc46b,#58e3c9)">掌</div>
+          <h3>掌上旧事</h3>
+          <div class="zhai-creator-field">掌机收藏 / 怀旧游戏</div>
+          <p>收了一柜子旧掌机，也收了一柜子旧回忆，节目节奏慢，适合睡前一集。</p>
+          <div class="zhai-creator-data"><span><b>52</b>作品</span><span><b>7.6万</b>关注</span></div>
+          <button class="zhai-more-link zhai-author-btn" type="button" data-zhai-author="掌上旧事">认识 TA</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事随笔 -->
+  <section class="zhai-section" id="zhaiStory">
+    <div class="zhai-wrap">
+      <div class="zhai-section-head">
+        <div class="zhai-section-kicker">STORIES · 故事随笔</div>
+        <h2>镜头之外，<em>同好们的生活切片</em></h2>
+        <p class="zhai-section-desc">有些感受不适合剪成视频，于是我们把它写成文字。每一篇都来自社区真实投稿。</p>
+      </div>
+      <div class="zhai-story-grid">
+        <article class="zhai-story">
+          <h3>把展柜搬进新家那天，我才发现自己在收藏什么</h3>
+          <p>搬家师傅问我这一柜子小人值多少钱，我说不清楚。后来我想，它们的价格其实早就不重要了。第一只学生时代用三个月生活费买的，漆面已经有点发黄；第二只是工作第一年给自己的奖励，包装盒到现在都没扔；第三只是朋友从外地背回来的，路上磕掉了一小块。把它们重新按年份摆好的那个晚上，我坐在纸箱中间看了很久。原来我收藏的不是模型，是那个愿意为一件事攒很久钱的自己。</p>
+          <div class="zhai-story-by"><span class="zhai-avatar" style="background:#ffc46b">盒</span>盒控老陈 · 收藏随笔</div>
+        </article>
+        <article class="zhai-story">
+          <h3>漫展散场后，我们在便利店坐了两个小时</h3>
+          <p>那天拍完闭馆，相机电池全空了，我和两个刚认识的摊主一起去便利店吃关东煮。一个说自己印了三百本只卖出去八十本，一个说今年终于回本了。他们没有抱怨，只是在算下一次展位费要多久才能攒够。我举着没电的相机，忽然觉得这才是最该记录的画面：不是展台上最好看的那一格，而是散场之后还愿意继续聊下去的人。后来这期视频没有加任何特效，弹幕却最多。</p>
+          <div class="zhai-story-by"><span class="zhai-avatar" style="background:#58e3c9">展</span>现场组小鹿 · 现场手记</div>
+        </article>
+        <article class="zhai-story">
+          <h3>第十年，我们还在打同一张地图</h3>
+          <p>群里最沉默的那位，今年孩子都会走路了。我们约好每周五晚上十点，能来几个算几个。地图还是那张旧地图，平衡性早就被官方改得面目全非，但我们闭着眼都能跑完全程。有时候一局打完没人说话，只有麦克风里的电流声，然后有人轻轻说一句「下周见」。这大概就是坚持的意义吧，不是因为游戏多好玩，而是因为一起玩的人还在。</p>
+          <div class="zhai-story-by"><span class="zhai-avatar" style="background:#8d7bff">夜</span>夜猫联机组 · 联机实录</div>
+        </article>
+        <article class="zhai-story">
+          <h3>第一次投稿被退回，编辑给我写了四百字</h3>
+          <p>当时挺不服气的，觉得自己的片子明明不错。后来编辑一条条列出来：开头三秒没有信息、字幕行距太挤、背景音乐盖过人声。最后一句是「你的想法很好，只是还没讲清楚」。我把这封退稿信存到现在，每隔一段时间翻出来看看。现在我也会帮新人看片子，尽量把话说得具体一点，因为我知道，含糊的批评只会让人更迷茫。</p>
+          <div class="zhai-story-by"><span class="zhai-avatar" style="background:#ff5c8a">纸</span>纸张研究所 · 创作手记</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 评论与榜单 -->
+  <section class="zhai-section" id="zhaiCommunity">
+    <div class="zhai-wrap">
+      <div class="zhai-section-head">
+        <div class="zhai-section-kicker">COMMUNITY · 社区口碑</div>
+        <h2>来自同好的<em>真实评价</em></h2>
+        <p class="zhai-section-desc">评论不做精选，只做基本审核。以下内容均来自公开评论区，已获作者授权展示。</p>
+      </div>
+      <div class="zhai-comment-grid">
+        <article class="zhai-comment">
+          <div class="zhai-comment-head"><span class="zhai-avatar" style="background:#ff5c8a">阿</span><strong>阿岚不吃香菜</strong><span>3 天前</span></div>
+          <p>深夜番剧拆解是真的能学到东西，不是那种念稿式解说。上次讲留白那期，我照着方法重新看了一遍原作，才发现自己漏了好多细节。</p>
+          <div class="zhai-comment-foot"><span>♡ 128</span><span>回复 12</span></div>
+        </article>
+        <article class="zhai-comment">
+          <div class="zhai-comment-head"><span class="zhai-avatar" style="background:#58e3c9">北</span><strong>北纬三十度</strong><span>5 天前</span></div>
+          <p>展柜改造那期帮我省了不少钱，跟着清单买灯，效果比我想象中好。唯一问题是看完之后开始想买更多手办。</p>
+          <div class="zhai-comment-foot"><span>♡ 96</span><span>回复 8</span></div>
+        </article>
+        <article class="zhai-comment">
+          <div class="zhai-comment-head"><span class="zhai-avatar" style="background:#8d7bff">小</span><strong>小满的柜子</strong><span>1 周前</span></div>
+          <p>投稿被采纳了，编辑真的会一条条给修改意见，不是随便回个「收到」。第一次觉得自己做的东西被认真对待。</p>
+          <div class="zhai-comment-foot"><span>♡ 214</span><span>回复 23</span></div>
+        </article>
+        <article class="zhai-comment">
+          <div class="zhai-comment-head"><span class="zhai-avatar" style="background:#ffc46b">二</span><strong>二手市场常客</strong><span>1 周前</span></div>
+          <p>避坑指南那期讲得挺实在，尤其是封条和版权标的部分。不过希望以后能多讲讲不同年份再版的区别，这个坑我踩过。</p>
+          <div class="zhai-comment-foot"><span>♡ 67</span><span>回复 9</span></div>
+        </article>
+        <article class="zhai-comment">
+          <div class="zhai-comment-head"><span class="zhai-avatar" style="background:#58e3c9">夜</span><strong>夜行列车</strong><span>2 周前</span></div>
+          <p>联机那期我看了三遍。不是游戏多精彩，是那种「还有人在等你上线」的感觉太熟悉了，看着看着就想起自己的老群。</p>
+          <div class="zhai-comment-foot"><span>♡ 302</span><span>回复 31</span></div>
+        </article>
+        <article class="zhai-comment">
+          <div class="zhai-comment-head"><span class="zhai-avatar" style="background:#ff5c8a">草</span><strong>草稿箱满了</strong><span>2 周前</span></div>
+          <p>同人志那期讲印厂沟通的部分很干货，我照着模板发邮件，对方回复都比以前快。希望手册能继续更新，特别是装帧那章。</p>
+          <div class="zhai-comment-foot"><span>♡ 84</span><span>回复 6</span></div>
+        </article>
+        <article class="zhai-comment">
+          <div class="zhai-comment-head"><span class="zhai-avatar" style="background:#8d7bff">慢</span><strong>慢速快门</strong><span>3 周前</span></div>
+          <p>页面看着舒服，没有乱七八糟的弹窗，也不逼着你注册。在这个年头，一个官网能安安静静让人看内容，已经挺难得了。</p>
+          <div class="zhai-comment-foot"><span>♡ 156</span><span>回复 14</span></div>
+        </article>
+        <article class="zhai-comment">
+          <div class="zhai-comment-head"><span class="zhai-avatar" style="background:#ffc46b">旧</span><strong>旧卡带</strong><span>1 个月前</span></div>
+          <p>掌机回忆那期太戳了。我也有台同型号的，电池盖早就丢了，但每次翻出来还是会装上电池听个响。</p>
+          <div class="zhai-comment-foot"><span>♡ 189</span><span>回复 17</span></div>
+        </article>
+        <article class="zhai-comment">
+          <div class="zhai-comment-head"><span class="zhai-avatar" style="background:#58e3c9">新</span><strong>新手上路中</strong><span>1 个月前</span></div>
+          <p>作为刚入坑的人，最喜欢这里的科普内容，不会一上来就甩一堆黑话。希望以后能出一期新手入坑路线，讲到哪买、怎么辨别版本。</p>
+          <div class="zhai-comment-foot"><span>♡ 73</span><span>回复 11</span></div>
+        </article>
+      </div>
+
+      <div class="zhai-rank-wrap" style="margin-top:34px">
+        <div class="zhai-rank">
+          <h3>本周热度榜 <span>每周一更新</span></h3>
+          <ul>
+            <li><span class="zhai-rank-num">1</span>深夜番剧拆解 EP.08<em>2.6万</em></li>
+            <li><span class="zhai-rank-num">2</span>二手周边避坑指南<em>2.1万</em></li>
+            <li><span class="zhai-rank-num">3</span>出租屋的二次元角落<em>1.9万</em></li>
+            <li><span class="zhai-rank-num">4</span>凌晨三点的联机实录<em>1.7万</em></li>
+            <li><span class="zhai-rank-num">5</span>被低估的十首番剧配乐<em>1.5万</em></li>
+          </ul>
+        </div>
+        <div class="zhai-rank">
+          <h3>新人创作者榜 <span>近 30 天</span></h3>
+          <ul>
+            <li><span class="zhai-rank-num">1</span>声带散步<em>+4.2千</em></li>
+            <li><span class="zhai-rank-num">2</span>隅田房间<em>+3.8千</em></li>
+            <li><span class="zhai-rank-num">3</span>掌上旧事<em>+3.1千</em></li>
+            <li><span class="zhai-rank-num">4</span>手柄不离手<em>+2.6千</em></li>
+            <li><span class="zhai-rank-num">5</span>鉴物小组<em>+2.2千</em></li>
+          </ul>
+        </div>
+        <div class="zhai-rank">
+          <h3>社区口碑榜 <span>按收藏率</span></h3>
+          <ul>
+            <li><span class="zhai-rank-num">1</span>分镜稿怎么读<em>收藏率 38%</em></li>
+            <li><span class="zhai-rank-num">2</span>三平米展柜改造记<em>收藏率 35%</em></li>
+            <li><span class="zhai-rank-num">3</span>同人创作手册<em>收藏率 33%</em></li>
+            <li><span class="zhai-rank-num">4</span>角色配音练习三十天<em>收藏率 29%</em></li>
+            <li><span class="zhai-rank-num">5</span>一本同人志的四十天<em>收藏率 27%</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作灵感 -->
+  <section class="zhai-section zhai-idea" id="zhaiIdea">
+    <div class="zhai-wrap">
+      <div class="zhai-section-head">
+        <div class="zhai-section-kicker">INSPIRATION · 创作灵感</div>
+        <h2>不知道拍什么？<em>先从这里找题目</em></h2>
+        <p class="zhai-section-desc">每周更新三个可执行的选题方向，附带标题建议与结构提示，欢迎直接拿去用。</p>
+      </div>
+      <div class="zhai-idea-grid">
+        <div class="zhai-idea-card">
+          <h3>选题一：一件旧物的来历</h3>
+          <p>从你收藏里挑一件买得最早的东西，讲讲它怎么来的、当时为什么买、现在再看有什么不同。</p>
+          <code>结构提示：物品特写 → 购入场景还原 → 如今的摆放位置 → 一句总结</code>
+        </div>
+        <div class="zhai-idea-card">
+          <h3>选题二：给新人三个提醒</h3>
+          <p>回想你自己入坑时最后悔的三件事，把它们说清楚。真实的小教训往往比大道理更有传播力。</p>
+          <code>标题建议：入坑三年，我最想早点知道的三件事</code>
+        </div>
+        <div class="zhai-idea-card">
+          <h3>选题三：一张桌子的迁移史</h3>
+          <p>记录你布置工作台或展柜的全过程，包括失败的那次。动手类内容的关键是给观众可复制的步骤。</p>
+          <code>剪辑思路：延时摄影 + 关键节点口播 + 物料清单字幕卡</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 -->
+  <section class="zhai-section" id="zhaiNews">
+    <div class="zhai-wrap">
+      <div class="zhai-section-head">
+        <div class="zhai-section-kicker">NEWSROOM · 企业动态</div>
+        <h2>品牌公告与<em>平台更新</em></h2>
+        <p class="zhai-section-desc">所有正式信息以官网发布为准，涉及规则调整的内容会提前公示，保留不少于七天的意见反馈期。</p>
+      </div>
+      <div class="zhai-news-list">
+        <article class="zhai-news">
+          <div class="zhai-news-date">2026 / 11 / 18</div>
+          <div>
+            <h3>亚洲宅男福利社创作者扶持计划 2.0 正式开放申请</h3>
+            <p>新增 4K 高清素材库、分镜模板与剪辑工程文件下载权限，并为首批入驻创作者提供一对一指导。</p>
+          </div>
+          <span class="zhai-news-tag">官方发布</span>
+        </article>
+        <article class="zhai-news">
+          <div class="zhai-news-date">2026 / 11 / 16</div>
+          <div>
+            <h3>「深夜番剧拆解」第三季上线，首周更新三期</h3>
+            <p>新一季增加分镜对比与配乐拆解固定环节，配套图文笔记在专题页同步更新，支持离线保存。</p>
+          </div>
+          <span class="zhai-news-tag">内容更新</span>
+        </article>
+        <article class="zhai-news">
+          <div class="zhai-news-date">2026 / 11 / 12</div>
+          <div>
+            <h3>宅文化创作挑战赛 #我的收藏柜故事 启动报名</h3>
+            <p>面向所有同好开放，不限制设备与时长，评审关注故事完整度与真实感，报名截止 12 月 5 日。</p>
+          </div>
+          <span class="zhai-news-tag">比赛报名</span>
+        </article>
+        <article class="zhai-news">
+          <div class="zhai-news-date">2026 / 11 / 08</div>
+          <div>
+            <h3>社区公约更新：新增周边交易信息发布规范</h3>
+            <p>为保障同好权益，涉及交易的内容需明确标注来源与品相，平台不介入交易，仅提供信息展示。</p>
+          </div>
+          <span class="zhai-news-tag">规则公示</span>
+        </article>
+        <article class="zhai-news">
+          <div class="zhai-news-date">2026 / 11 / 03</div>
+          <div>
+            <h3>平台完成无障碍播放器升级，支持字幕字号调节</h3>
+            <p>同时优化了移动端播放稳定性，弱网环境下自动切换清晰度，减少卡顿与音画不同步问题。</p>
+          </div>
+          <span class="zhai-news-tag">产品升级</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合作品牌 -->
+  <section class="zhai-section" id="zhaiPartner">
+    <div class="zhai-wrap">
+      <div class="zhai-section-head">
+        <div class="zhai-section-kicker">PARTNERS · 合作伙伴</div>
+        <h2>与我们同行的<em>品牌伙伴</em></h2>
+        <p class="zhai-section-desc">合作内容均明确标注，不参与内容评分与榜单排序，我们珍惜每一次信任。</p>
+      </div>
+      <div class="zhai-partner-grid">
+        <div class="zhai-partner">星轨模型</div>
+        <div class="zhai-partner">南风印刷</div>
+        <div class="zhai-partner">拾光展具</div>
+        <div class="zhai-partner">知行书店</div>
+        <div class="zhai-partner">夜航音频</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="zhai-section" id="zhaiFaq">
+    <div class="zhai-wrap">
+      <div class="zhai-section-head">
+        <div class="zhai-section-kicker">HELP · 帮助中心</div>
+        <h2>常见问题<em>与官方解答</em></h2>
+        <p class="zhai-section-desc">没有找到答案？可通过页面底部联系方式与我们取得联系，工作日内一般 24 小时内回复。</p>
+      </div>
+      <div class="zhai-faq">
+        <details>
+          <summary>如何向亚洲宅男福利社投稿？对设备有要求吗？</summary>
+          <p>点击页面中的「投稿入口」即可填写基本信息并上传作品链接。我们不限制拍摄设备，手机竖屏内容同样欢迎。评审更关注选题是否具体、表达是否清楚、画面与声音是否干净。首次投稿建议控制在三到八分钟，附上简短的创作说明会更有帮助。</p>
+        </details>
+        <details>
+          <summary>平台内容都是原创吗？转载内容如何处理？</summary>
+          <p>官方网站发布的内容以原创企划与创作者授权投稿为主。涉及引用他人作品的部分，我们会标注来源并尽量取得授权；如权利人认为存在使用不当，可通过联系方式提交说明，核实后我们会及时处理。平台不提供任何未经授权的完整作品传播。</p>
+        </details>
+        <details>
+          <summary>创作者扶持计划具体提供哪些支持？</summary>
+          <p>目前包含四个方向：一是高清素材与模板下载权限；二是剪辑与选题的一对一指导；三是版权与合约方面的基础咨询；四是符合条件的内容会获得官网焦点位推荐。扶持不收取费用，也不要求独家签约，创作者保留作品完整权利。</p>
+        </details>
+        <details>
+          <summary>社区对评论与互动有什么要求？</summary>
+          <p>我们鼓励有内容的讨论：可以不同意，但请说明理由；可以玩梗，但避免攻击具体的人。涉及剧透的评论请使用折叠标记。对于反复发布广告、引战或人身攻击的账号，平台会视情况限制互动权限，处理结果可申诉。</p>
+        </details>
+        <details>
+          <summary>如何参加创作挑战赛？评审标准是什么？</summary>
+          <p>在活动页填写报名信息并提交作品即可，同一作者可提交多件但仅一件进入终评。评审分为选题完成度、叙事清晰度、制作完成度三个维度，不设粉丝量门槛，新人作品同样有机会进入推荐位。结果会在官网与社区同步公示。</p>
+        </details>
+        <details>
+          <summary>品牌合作应该怎么联系？需要提供哪些资料？</summary>
+          <p>请通过页面底部的商务邮箱联系我们，邮件中说明合作类型、产品信息与期望时间。我们原则上不接受影响内容独立性的合作方式，所有商业内容都会在显著位置标注。收到资料后，商务同事会在三个工作日内回复是否进入下一步沟通。</p>
+        </details>
+        <details>
+          <summary>页面内容加载异常怎么办？</summary>
+          <p>建议先尝试刷新页面或更换浏览器；如使用移动网络，可切换到 Wi-Fi 后重试。若问题持续存在，请通过联系方式告知设备型号与大致出现时间，我们会尽快排查。平台不要求安装任何额外插件即可正常浏览。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="zhai-section" id="zhaiContact">
+    <div class="zhai-wrap">
+      <div class="zhai-contact-grid">
+        <div class="zhai-contact-box">
+          <h3>把你想拍的东西，交给我们一起完成</h3>
+          <p>无论是第一次拿起相机的新人，还是已经更新多年的创作者，亚洲宅男福利社都愿意提供一个稳定的展示位置。你可以投稿、报名参加挑战赛、申请创作者扶持，或者只是来聊聊最近在看什么。官方网站长期开放这些入口，也欢迎品牌方就内容共创与我们联系。</p>
+          <div class="zhai-contact-actions">
+            <button class="zhai-btn zhai-btn-primary" id="zhaiOpenSubmit2" type="button">我要投稿</button>
+            <button class="zhai-btn zhai-btn-ghost zhai-share" type="button">分享本站</button>
+            <button class="zhai-btn zhai-btn-ghost zhai-copy" type="button">复制链接</button>
+          </div>
+        </div>
+        <div class="zhai-contact-list">
+          <div class="zhai-contact-item">
+            <div><b>内容合作</b><span>content@zhai-club.example · 工作日 10:00–19:00</span></div>
+          </div>
+          <div class="zhai-contact-item">
+            <div><b>品牌商务</b><span>brand@zhai-club.example · 三个工作日内回复</span></div>
+          </div>
+          <div class="zhai-contact-item">
+            <div><b>版权与申诉</b><span>rights@zhai-club.example · 请附权属说明与链接</span></div>
+          </div>
+          <div class="zhai-contact-item">
+            <div><b>社区反馈</b><span>通过页面右下角「回到顶部」旁的反馈入口提交，或发送站内信</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="zhai-footer">
+  <div class="zhai-wrap">
+    <div class="zhai-footer-grid">
+      <div>
+        <div class="zhai-footer-brand">
+          <span class="zhai-brand-mark">宅</span>
+          <span class="zhai-brand-name">亚洲宅男福利社</span>
+        </div>
+        <p>亚洲宅男福利社官方网站，深耕宅文化垂直领域的原创视频品牌与内容社区。我们以原创、正版、高清为内容底线，持续运营值得信赖的内容生态，陪伴每一位同好把喜欢的事情做得更久一点。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#zhaiFocus">焦点视频</a></li>
+          <li><a href="#zhaiFlow">热门视频流</a></li>
+          <li><a href="#zhaiTopic">专题企划</a></li>
+          <li><a href="#zhaiStory">故事随笔</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于平台</h4>
+        <ul>
+          <li><a href="#zhaiAbout">品牌解析</a></li>
+          <li><a href="#zhaiCreator">创作者矩阵</a></li>
+          <li><a href="#zhaiNews">企业动态</a></li>
+          <li><a href="#zhaiPartner">合作伙伴</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>支持与联系</h4>
+        <ul>
+          <li><a href="#zhaiFaq">帮助中心</a></li>
+          <li><a href="#zhaiContact">联系方式</a></li>
+          <li><button class="zhai-more-link" style="text-align:left;padding:0;border:none;background:none;color:inherit;font-size:12.5px" id="zhaiFooterSubmit" type="button">投稿入口</button></li>
+          <li><button class="zhai-more-link" style="text-align:left;padding:0;border:none;background:none;color:inherit;font-size:12.5px" id="zhaiFooterFeedback" type="button">反馈建议</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="zhai-footer-bottom">
+      <span>© 2026 亚洲宅男福利社 · 官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容均为原创或经授权发布，未经许可请勿转载 · 社区运营备案号：示例备案 2026001188</span>
+    </div>
+  </div>
+</footer>
+
+<button class="zhai-top-btn" id="zhaiTopBtn" type="button" aria-label="回到顶部">↑</button>
+<div class="zhai-toast" id="zhaiToast"></div>
+
+<div class="zhai-modal" id="zhaiModal" role="dialog" aria-modal="true" aria-labelledby="zhaiModalTitle">
+  <div class="zhai-modal-box">
+    <button class="zhai-modal-close" id="zhaiModalClose" type="button" aria-label="关闭">✕</button>
+    <h3 id="zhaiModalTitle">提示</h3>
+    <div id="zhaiModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var zhaiToast = document.getElementById('zhaiToast');
+  var zhaiToastTimer = null;
+  function zhaiShowToast(msg){
+    zhaiToast.textContent = msg;
+    zhaiToast.classList.add('is-on');
+    clearTimeout(zhaiToastTimer);
+    zhaiToastTimer = setTimeout(function(){ zhaiToast.classList.remove('is-on'); }, 2100);
+  }
+
+  /* 移动端导航 */
+  var zhaiBurger = document.getElementById('zhaiBurger');
+  var zhaiNav = document.getElementById('zhaiNav');
+  zhaiBurger.addEventListener('click', function(){
+    zhaiNav.classList.toggle('is-open');
+  });
+  zhaiNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ zhaiNav.classList.remove('is-open'); }
+  });
+
+  /* 搜索反馈 */
+  var zhaiSearchInput = document.getElementById('zhaiSearchInput');
+  var zhaiSearchBtn = document.getElementById('zhaiSearchBtn');
+  var zhaiSearchFeedback = document.getElementById('zhaiSearchFeedback');
+  var zhaiSuggestions = [
+    '深夜番剧拆解 第三季',
+    '手办开箱 细节检视',
+    '三平米展柜改造',
+    '同人志 印刷工艺',
+    '掌机收藏 回忆',
+    '角色配音练习方法',
+    '二手周边 避坑指南',
+    '分镜稿 入门'
+  ];
+  function zhaiRenderSearch(keyword){
+    var key = (keyword || '').trim();
+    var list = key ? zhaiSuggestions.filter(function(item){ return item.indexOf(key) > -1; }) : zhaiSuggestions.slice(0,5);
+    if(!list.length){
+      zhaiSearchFeedback.innerHTML = '<li>没有匹配到「' + zhaiEscape(key) + '」相关内容，换个词试试，或到帮助中心留言</li>';
+    } else {
+      zhaiSearchFeedback.innerHTML = list.map(function(item){
+        return '<li>' + zhaiEscape(item) + '</li>';
+      }).join('');
+    }
+    zhaiSearchFeedback.classList.add('is-on');
+  }
+  function zhaiEscape(str){
+    return String(str).replace(/[&<>"']/g, function(s){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s];
+    });
+  }
+  zhaiSearchBtn.addEventListener('click', function(){
+    var key = zhaiSearchInput.value.trim();
+    if(!key){ zhaiShowToast('请输入关键词后再搜索'); zhaiSearchInput.focus(); return; }
+    zhaiRenderSearch(key);
+    zhaiShowToast('已为你筛选「' + key + '」相关选题');
+  });
+  zhaiSearchInput.addEventListener('focus', function(){
+    if(!zhaiSearchFeedback.classList.contains('is-on')){ zhaiRenderSearch(zhaiSearchInput.value); }
+  });
+  zhaiSearchInput.addEventListener('input', function(){ zhaiRenderSearch(zhaiSearchInput.value); });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.zhai-search-wrap')){ zhaiSearchFeedback.classList.remove('is-on'); }
+  });
+  zhaiSearchFeedback.addEventListener('click', function(e){
+    if(e.target.tagName === 'LI'){
+      zhaiSearchInput.value = e.target.textContent;
+      zhaiSearchFeedback.classList.remove('is-on');
+      zhaiShowToast('已选择：' + e.target.textContent);
+    }
+  });
+
+  /* 标签筛选 */
+  var zhaiTagBar = document.getElementById('zhaiTagBar');
+  var zhaiFlowGrid = document.getElementById('zhaiFlowGrid');
+  zhaiTagBar.addEventListener('click', function(e){
+    var btn = e.target.closest('.zhai-tag-btn');
+    if(!btn) return;
+    var tag = btn.getAttribute('data-zhai-tag');
+    Array.prototype.forEach.call(zhaiTagBar.querySelectorAll('.zhai-tag-btn'), function(b){
+      b.classList.toggle('is-active', b === btn);
+    });
+    Array.prototype.forEach.call(zhaiFlowGrid.querySelectorAll('.zhai-card'), function(card){
+      var show = (tag === 'all' || card.getAttribute('data-zhai-tag') === tag);
+      card.style.display = show ? '' : 'none';
+    });
+    zhaiShowToast(tag === 'all' ? '已显示全部热门内容' : '已筛选「' + btn.textContent + '」内容');
+  });
+
+  /* 点赞 / 收藏 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('.zhai-like');
+    if(likeBtn){
+      var b = likeBtn.querySelector('b');
+      var num = parseInt(b.textContent.replace(/,/g,''), 10) || 0;
+      if(likeBtn.classList.toggle('is-liked')){
+        num += 1;
+        likeBtn.firstChild.textContent = '♥ 已赞 ';
+        zhaiShowToast('已点赞，感谢支持原创内容');
+      } else {
+        num = Math.max(0, num - 1);
+        likeBtn.firstChild.textContent = '♡ 点赞 ';
+        zhaiShowToast('已取消点赞');
+      }
+      b.textContent = num;
+      return;
+    }
+    var saveBtn = e.target.closest('.zhai-save');
+    if(saveBtn){
+      if(saveBtn.classList.toggle('is-saved')){
+        saveBtn.textContent = '★ 已收藏';
+        zhaiShowToast('已加入收藏，可在个人中心查看');
+      } else {
+        saveBtn.textContent = '☆ 收藏';
+        zhaiShowToast('已取消收藏');
+      }
+      return;
+    }
+  });
+
+  /* 弹窗 */
+  var zhaiModal = document.getElementById('zhaiModal');
+  var zhaiModalTitle = document.getElementById('zhaiModalTitle');
+  var zhaiModalBody = document.getElementById('zhaiModalBody');
+  function zhaiOpenModal(title, html){
+    zhaiModalTitle.textContent = title;
+    zhaiModalBody.innerHTML = html;
+    zhaiModal.classList.add('is-on');
+  }
+  function zhaiCloseModal(){
+    zhaiModal.classList.remove('is-on');
+  }
+  document.getElementById('zhaiModalClose').addEventListener('click', zhaiCloseModal);
+  zhaiModal.addEventListener('click', function(e){ if(e.target === zhaiModal){ zhaiCloseModal(); } });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ zhaiCloseModal(); } });
+
+  /* 分享 */
+  function zhaiShareHtml(){
+    return '<p>选择你常用的平台，把亚洲宅男福利社分享给同好。</p>' +
+      '<div class="zhai-share-grid">' +
+      '<button class="zhai-share-item" type="button" data-zhai-channel="微信"><b>微</b>微信</button>' +
+      '<button class="zhai-share-item" type="button" data-zhai-channel="微博"><b>博</b>微博</button>' +
+      '<button class="zhai-share-item" type="button" data-zhai-channel="QQ"><b>Q</b>QQ</button>' +
+      '<button class="zhai-share-item" type="button" data-zhai-channel="豆瓣"><b>豆</b>豆瓣</button>' +
+      '<button class="zhai-share-item" type="button" data-zhai-channel="贴吧"><b>吧</b>贴吧</button>' +
+      '<button class="zhai-share-item" type="button" data-zhai-channel="复制链接"><b>⧉</b>复制链接</button>' +
+      '</div>';
+  }
+  document.addEventListener('click', function(e){
+    if(e.target.closest('.zhai-share')){
+      zhaiOpenModal('分享本站', zhaiShareHtml());
+      return;
+    }
+    var channelBtn = e.target.closest('[data-zhai-channel]');
+    if(channelBtn){
+      var ch = channelBtn.getAttribute('data-zhai-channel');
+      zhaiCloseModal();
+      if(ch === '复制链接'){ zhaiCopyLink(); }
+      else { zhaiShowToast('已生成分享卡片，请前往' + ch + '粘贴发送'); }
+      return;
+    }
+    if(e.target.closest('.zhai-copy')){
+      zhaiCopyLink();
+    }
+  });
+  function zhaiCopyLink(){
+    var link = 'https://zhai-club.example/';
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(link).then(function(){
+        zhaiShowToast('链接已复制，去分享给同好吧');
+      }, function(){
+        zhaiShowToast('复制失败，可手动选中页面地址分享');
+      });
+    } else {
+      zhaiShowToast('当前浏览器不支持自动复制，请手动复制地址');
+    }
+  }
+
+  /* 作者弹窗 */
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.zhai-author-btn');
+    if(!btn) return;
+    var name = btn.getAttribute('data-zhai-author');
+    zhaiOpenModal(name + ' · 创作者档案',
+      '<p>昵称：' + name + '<br>合作方向：原创视频企划、专题共创、品牌内容。</p>' +
+      '<p>该创作者已通过平台实名与内容规范审核，作品均标注制作方与授权范围。如需合作，可在联系页面选择「内容合作」并注明创作者昵称，我们会在三个工作日内转达。</p>' +
+      '<div class="zhai-modal-foot"><button class="zhai-btn zhai-btn-primary" type="button" id="zhaiAuthorContact">发起合作咨询</button></div>'
+    );
+    var contactBtn = document.getElementById('zhaiAuthorContact');
+    if(contactBtn){
+      contactBtn.addEventListener('click', function(){
+        zhaiCloseModal();
+        document.getElementById('zhaiContact').scrollIntoView({behavior:'smooth'});
+      });
+    }
+  });
+
+  /* 投稿弹窗 */
+  function zhaiSubmitHtml(){
+    return '<p>填写基本信息即可提交，平台不收取任何投稿费用。</p>' +
+      '<input type="text" placeholder="作品标题" aria-label="作品标题">' +
+      '<input type="text" placeholder="创作者昵称" aria-label="创作者昵称">' +
+      '<textarea rows="3" placeholder="一句话说明你的选题与拍摄思路" aria-label="选题说明"></textarea>' +
+      '<div class="zhai-modal-foot"><button class="zhai-btn zhai-btn-ghost" type="button" id="zhaiSubmitCancel">取消</button>' +
+      '<button class="zhai-btn zhai-btn-primary" type="button" id="zhaiSubmitSend">提交作品</button></div>';
+  }
+  function zhaiBindSubmit(){
+    var send = document.getElementById('zhaiSubmitSend');
+    var cancel = document.getElementById('zhaiSubmitCancel');
+    if(cancel){ cancel.addEventListener('click', zhaiCloseModal); }
+    if(send){
+      send.addEventListener('click', function(){
+        zhaiCloseModal();
+        zhaiShowToast('投稿信息已提交，编辑会在五个工作日内回复');
+      });
+    }
+  }
+  ['zhaiOpenSubmit','zhaiOpenSubmit2','zhaiFooterSubmit'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el){
+      el.addEventListener('click', function(){
+        zhaiOpenModal('投稿入口', zhaiSubmitHtml());
+        zhaiBindSubmit();
+      });
+    }
+  });
+
+  /* 反馈弹窗 */
+  function zhaiFeedbackHtml(){
+    return '<p>你可以反馈内容问题、功能建议或社区体验，我们会逐条查看。</p>' +
+      '<input type="text" placeholder="反馈类型，如：内容问题 / 功能建议" aria-label="反馈类型">' +
+      '<textarea rows="3" placeholder="请描述你遇到的问题或想法" aria-label="反馈内容"></textarea>' +
+      '<div class="zhai-modal-foot"><button class="zhai-btn zhai-btn-ghost" type="button" id="zhaiFeedbackCancel">取消</button>' +
+      '<button class="zhai-btn zhai-btn-primary" type="button" id="zhaiFeedbackSend">提交反馈</button></div>';
+  }
+  function zhaiOpenFeedback(){
+    zhaiOpenModal('反馈建议', zhaiFeedbackHtml());
+    var cancel = document.getElementById('zhaiFeedbackCancel');
+    var send = document.getElementById('zhaiFeedbackSend');
+    if(cancel){ cancel.addEventListener('click', zhaiCloseModal); }
+    if(send){
+      send.addEventListener('click', function(){
+        zhaiCloseModal();
+        zhaiShowToast('反馈已收到，感谢你帮助社区变得更好');
+      });
+    }
+  }
+  var footerFeedback = document.getElementById('zhaiFooterFeedback');
+  if(footerFeedback){ footerFeedback.addEventListener('click', zhaiOpenFeedback); }
+
+  /* 回到顶部 */
+  var zhaiTopBtn = document.getElementById('zhaiTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 620){ zhaiTopBtn.classList.add('is-on'); }
+    else { zhaiTopBtn.classList.remove('is-on'); }
+  }, {passive:true});
+  zhaiTopBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 数字滚动 */
+  var zhaiCounted = false;
+  function zhaiRunCount(){
+    if(zhaiCounted) return;
+    zhaiCounted = true;
+    Array.prototype.forEach.call(document.querySelectorAll('[data-zhai-count]'), function(el){
+      var target = parseInt(el.getAttribute('data-zhai-count'), 10) || 0;
+      var start = null;
+      var dur = 1200;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min(1, (ts - start) / dur);
+        var val = Math.floor(target * (1 - Math.pow(1 - p, 3)));
+        el.textContent = val.toLocaleString('zh-CN');
+        if(p < 1){ requestAnimationFrame(step); }
+        else { el.textContent = target.toLocaleString('zh-CN'); }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 80){ zhaiRunCount(); }
+  }, {passive:true});
+  setTimeout(zhaiRunCount, 900);
+
+})();
+</script>
+</body>
+              </html>
